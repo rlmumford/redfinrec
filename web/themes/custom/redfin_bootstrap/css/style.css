@@ -1,3 +1,12 @@
 /**
  * Place your custom styles here.
  */
+
+.footer-wrapper {
+  background-color: #b61c1c;
+  padding-top: 45px;
+}
+
+.footer {
+  margin-top: 0px;
+}
