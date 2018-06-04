@@ -94,10 +94,10 @@
 
 {# Main #}
 {% block main %}
-<div role="main-wrapper" class="main-wrapper">
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+<div role="header-wrapper" class="header-wrapper">
+  <div role="header" class="header-container {{ container }} header">
     <div class="row">
-
+    
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -106,6 +106,13 @@
           </div>
         {% endblock %}
       {% endif %}
+
+    </div>
+  </div>
+</div>
+<div role="main-wrapper" class="main-wrapper">
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
@@ -170,3 +177,13 @@
     </div>
   {% endblock %}
 {% endif %}
+
+{% if page.gutter %}
+  {% block gutter %}
+    <div class="gutter-wrapper">
+      <div class="gutter {{ container }}" role="contentinfo">
+        {{ page.gutter }}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}  
