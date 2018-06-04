@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b421227288fc49e65d08b10eacdd8c5d",
+    "content-hash": "5b01f6c3ac1bc7f7909a544230a6021e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -160,6 +160,20 @@
             ],
             "description": "Drupal code generator",
             "time": "2018-04-25T17:35:50+00:00"
+        },
+        {
+            "name": "ckeditor-plugin/youtube",
+            "version": "2.1.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.ckeditor.com/youtube/releases/youtube_2.1.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "composer/installers",

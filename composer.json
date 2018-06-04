@@ -13,9 +13,25 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/youtube",
+                "version": "2.1.10",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/youtube/releases/youtube_2.1.10.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
         }
     ],
     "require": {
+        "ckeditor-plugin/youtube": "^2.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
@@ -60,6 +76,12 @@
         ]
     },
     "extra": {
+        "enable-patching": true,
+        "patches": {
+            "drupal/ckeditor_youtube": {
+                "Compatable with Composer Plugin": "./patches/ckeditor_youtube-composer_compat.patch"
+            }
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
