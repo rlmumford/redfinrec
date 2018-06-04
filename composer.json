@@ -39,6 +39,7 @@
         "drupal/ckeditor_youtube": "^1.1",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
+        "drupal/fontawesome": "^2.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

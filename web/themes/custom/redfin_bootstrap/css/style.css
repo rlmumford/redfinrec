@@ -114,3 +114,60 @@ h1.page-header {
   margin: 10px 100px;
   font-size: 1.2em;
 }
+
+/** Connect Box **/
+section.block-redfin-connect {
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+section.block-redfin-connect button.connect-button {
+  line-height: 23px;
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #222222;
+  border-radius: 25px;
+  background: none;
+  padding: 10px 15px;
+  margin: 7px 25px;
+  margin-right: 0px;
+}
+section.block-redfin-connect button.connect-button:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #b61c1c;
+  border-color: #b61c1c!important;
+}
+section.block-redfin-connect button.connect-button:focus {
+  outline: none!important;
+}
+section.block-redfin-connect .connect-info {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 400px;
+  height: auto;
+  text-align: right;
+}
+section.block-redfin-connect .connect-info .form-item {
+  margin-bottom: 0;
+}
+section.block-redfin-connect .connect-info,
+section.block-redfin-connect .connect-info label,
+section.block-redfin-connect .connect-info a,
+section.block-redfin-connect .connect-info a:hover {
+  font-size: 1.2em;
+  color: #333333;
+  text-decoration: none;
+  margin: 0;
+}
+section.block-redfin-connect .connect-info label {
+  display: none;
+}
+section.block-redfin-connect .connect-info a span {
+  margin-left: 5px;
+}
+section.block-redfin-connect .connect-info span.social a {
+  margin-left: 20px;
+}
