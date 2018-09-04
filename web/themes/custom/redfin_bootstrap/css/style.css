@@ -65,12 +65,12 @@ a.name.navbar-brand {
   clear: both;
   text-align: center;
 }
-.header nav ul.menu--main {
+.header nav ul.menu--front-navigation {
   width: 484px;
   display: inline-block;
   float: none;
 }
-.header nav ul.menu--main a {
+.header nav ul.menu--front-navigation a {
   border: solid #B61C1C 24px;
   color: #222222;
   background: rgba(255,255,255,0.3);
@@ -82,7 +82,7 @@ a.name.navbar-brand {
   padding: 0;
   line-height: 170px;
 }
-.header nav ul.menu--main a:hover {
+.header nav ul.menu--front-navigation a:hover {
   background: rgba(255,255,255,0.7);
 }
 
