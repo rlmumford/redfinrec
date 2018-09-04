@@ -19,14 +19,14 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * )
  */
 class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInterface {
-  
+
   /**
    * Stores the configuration factory.
    *
    * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
   protected $configFactory;
-  
+
   /**
    * Creates a RedfinConnectBlock instance.
    *
@@ -43,7 +43,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->configFactory = $config_factory;
   }
-  
+
   /**
    * {@inheritdoc}
    */
@@ -71,7 +71,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       'instagram' => NULL,
     ];
   }
-  
+
   /**
    * {@inheritdoc}
    */
@@ -80,7 +80,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#type' => 'fieldset',
       '#title' => $this->t('Connect Information'),
     ];
-    
+
     $form['connect_information']['telephone'] = [
       '#type' => 'tel',
       '#title' => $this->t('Telephone'),
@@ -121,10 +121,10 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#title' => $this->t('instagram'),
       '#default_value' => $this->configuration['instagram'],
     ];
-    
+
     return $form;
   }
-  
+
   /**
    * {@inheritdoc}
    */
@@ -139,7 +139,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
     $this->configuration['twitter'] = $values['twitter'];
     $this->configuration['instagram'] = $values['instagram'];
   }
-  
+
   /**
    * {@inheritdoc}
    */
@@ -191,7 +191,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
         '#markup' => '<span class="address">'.$this->configuration['address_line2'].'</span>',
       ];
     }
-    
+
     $social_links = [];
     if ($this->configuration['linkedin']) {
       $social_links[] = '<a href="https://www.linkedin.com/'.$this->configuration['linkedin'].'"><i class="spaceright fab fa-linkedin-in"></i></a>';
@@ -212,6 +212,29 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       ];
     }
 
+    $build['connect_information']['candidate_contact'] = [
+      '#type' => 'link',
+      '#title' => $this->t('Candidates'),
+      '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'candidate_interest']),
+      '#attributes' => [
+        'class' => ['use-ajax'],
+      ],
+      '#attached' => [
+        'library' => ['core/drupal.dialog.ajax'],
+      ],
+    ];
+    $build['connect_information']['client_contact'] = [
+      '#type' => 'link',
+      '#title' => $this->t('Clients'),
+      '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'client_interest']),
+      '#attributes' => [
+        'class' => ['use-ajax'],
+      ],
+      '#attached' => [
+        'library' => ['core/drupal.dialog.ajax'],
+      ],
+    ];
+
     return $build;
   }
-}  
+}
