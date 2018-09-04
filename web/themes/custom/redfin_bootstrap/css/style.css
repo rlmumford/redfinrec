@@ -1,6 +1,7 @@
 /**
  * Place your custom styles here.
  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
   font-family: "Montserrat", sans-serif;
   color: #222222;
