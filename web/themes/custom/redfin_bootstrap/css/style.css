@@ -13,7 +13,7 @@ body {
     margin-top: 0px;
   }
 }
- 
+
 a {
   color: #E61C1C;
 }
@@ -26,12 +26,40 @@ a.name.navbar-brand {
   background-size: 100%;
   height: 500px;
 }
+.header-wrapper.image-partner {
+  background: url(../images/partner_large.jpg);
+}
+.header-wrapper.image-action {
+  background: url(../images/action_large.jpg);
+}
+.header-wrapper.image-work {
+  background: url(../images/work_large.jpg);
+}
+.header-wrapper.image-thanks {
+  background: url(../images/thanks_large.jpg);
+}
 .path-frontpage .header-wrapper {
   background: url(../images/home_large.jpg);
   background-size: 100%;
   height: 100vh;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-wrapper.image-partner {
+    background-position-y: -200px;
+  }
+  .header-wrapper.image-work {
+    background-position-y: -100px;
+  }
+  .header-wrapper.image-action {
+    background-position-y: -200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-wrapper.image-action {
+    background-position-y: -350px;
+  }
+}
 
 .header nav {
   clear: both;
@@ -92,7 +120,7 @@ h1.page-header {
 .footer nav ul li a:hover,
 .footer nav ul li a:focus {
   background: none;
-} 
+}
 
 .gutter-wrapper {
   background-color: #222222;
@@ -108,7 +136,7 @@ h1.page-header {
   margin-bottom: 10px;
   padding: 0 10px;
 }
-  
+
 .region-content p {
   text-align: center;
   margin: 10px 100px;

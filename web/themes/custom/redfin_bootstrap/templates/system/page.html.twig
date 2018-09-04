@@ -94,10 +94,10 @@
 
 {# Main #}
 {% block main %}
-<div role="header-wrapper" class="header-wrapper">
-  <div role="header" class="header-container {{ container }} header">
+<div role="header-wrapper" class="header-wrapper {{ header_image_class }}">
+  <div role="header" class="header-container {{ container }} header boo">
     <div class="row">
-    
+
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -186,4 +186,4 @@
       </div>
     </div>
   {% endblock %}
-{% endif %}  
+{% endif %}

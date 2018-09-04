@@ -1,0 +1,5 @@
+name: Redfin Tweaks
+type: module
+description: Provides generic tweaks for the redfin site.
+package: Redfin
+core: 8.x
