@@ -209,3 +209,6 @@ section.block-redfin-connect .connect-info a span {
 section.block-redfin-connect .connect-info span.social a {
   margin-left: 20px;
 }
+section.block-redfin-connect .connect-info a.candidate-contact {
+  margin-right: 5px;
+}
