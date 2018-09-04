@@ -159,9 +159,9 @@ section.block-redfin-connect button.connect-button {
   color: #222222;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #222222;
+  border: 1px solid #B61C1C;
   border-radius: 25px;
-  background: none;
+  background-color: #B61C1C;
   padding: 10px 15px;
   margin: 7px 25px;
   margin-right: 0px;
