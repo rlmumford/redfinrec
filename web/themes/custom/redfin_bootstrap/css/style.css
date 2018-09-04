@@ -70,17 +70,22 @@ a.name.navbar-brand {
   display: inline-block;
   float: none;
 }
+.header nav ul.menu--front-navigation li {
+  margin: 12px;
+}
 .header nav ul.menu--front-navigation a {
+  display: table-cell;
+  vertical-align: middle;
   border: solid #B61C1C 24px;
   color: #222222;
   background: rgba(255,255,255,0.3);
   width: 218px;
   height: 218px;
   margin: 7px 12px;
-  font-size: 1.2em;
+  font-size: 20px;
   text-align: center;
-  padding: 0;
-  line-height: 170px;
+  line-height: 2em;
+  font-weight: bold;
 }
 .header nav ul.menu--front-navigation a:hover {
   background: rgba(255,255,255,0.7);
