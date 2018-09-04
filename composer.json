@@ -36,6 +36,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/bootstrap": "^3.11",
+        "drupal/ckeditor_widgets": "1.x-dev",
         "drupal/ckeditor_youtube": "^1.1",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
@@ -81,6 +82,10 @@
         "patches": {
             "drupal/ckeditor_youtube": {
                 "Compatable with Composer Plugin": "./patches/ckeditor_youtube-composer_compat.patch"
+            },
+            "drupal/ckeditor_widgets": {
+                "Remove unsupported widgets": "https://www.drupal.org/files/issues/2018-08-30/2932639-7.patch",
+                "Fix supported widget buttons": "https://www.drupal.org/files/issues/2018-08-23/2994701-2.patch"
             }
         },
         "installer-paths": {
