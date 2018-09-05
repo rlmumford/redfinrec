@@ -73,6 +73,7 @@ a.name.navbar-brand {
 }
 .header nav ul.menu--front-navigation li {
   margin: 12px;
+  float: left;
 }
 .header nav ul.menu--front-navigation a {
   display: table-cell;
