@@ -99,6 +99,10 @@ a.name.navbar-brand {
     border-width: 2px;
     font-size: 18px;
   }
+
+  p {
+    margin: 10px 20px;
+  }
 }
 
 h1.page-header {
