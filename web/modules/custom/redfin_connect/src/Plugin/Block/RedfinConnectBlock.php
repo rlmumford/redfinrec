@@ -223,6 +223,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#attached' => [
         'library' => ['core/drupal.dialog.ajax'],
       ],
+      '#suffix' => '| ',
     ];
     $build['connect_information']['client_contact'] = [
       '#type' => 'link',
