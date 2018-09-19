@@ -25,6 +25,24 @@ settings:
     -
       value: work
       label: Work
+    -
+      value: raspberry
+      label: Raspberry
+    -
+      value: apples
+      label: Apples
+    -
+      value: carrots
+      label: Carrots
+    -
+      value: corn
+      label: Corn
+    -
+      value: tomato
+      label: Tomatoes
+    -
+      value: truck
+      label: Truck
   allowed_values_function: ''
 module: options
 locked: false
