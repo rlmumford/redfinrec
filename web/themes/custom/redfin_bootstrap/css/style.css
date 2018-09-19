@@ -68,12 +68,21 @@ a.name.navbar-brand {
   background-size: 150%;
   background-position-y: -1300px;
 }
-.path-jobs,
+.path-jobs .header-wrapper,
+.page-node-type-job .header-wrapper,
 .header-wrapper.image-truck {
   background: url(../images/truck.jpg);
   background-size: 100%;
   background-position-y: -450px;
 }
+.page-node-type-job .header-wrapper {
+  height: initial;
+  background-position: right 0px bottom -300px;
+}
+.page-node-type-job .header-wrapper .header {
+  padding-bottom: 200px;
+}
+
 .path-frontpage .header-wrapper {
   background: url(../images/home_large.jpg);
   background-size: 100%;
@@ -146,6 +155,24 @@ h1.page-header {
   line-height: 170px;
   text-align: center;
 }
+.page-node-type-job h1.page-header {
+  font-size: 2em;
+  padding-left: 1em;
+  line-height: 1em;
+  text-align: left;
+}
+
+.page-node-type-job div.author {
+  display: none;
+}
+.page-node-type-job article.job.full .field {
+  clear: both;
+}
+.page-node-type-job article.job.full .field--type-entity-reference div.field--items > div {
+  margin-right: 1em;
+  float: left;
+}
+
 
 .footer-wrapper {
   background-color: #b61c1c;
@@ -202,6 +229,7 @@ section.block-redfin-connect {
   float: right;
   position: relative;
   z-index: 10;
+  margin-top: 15px;
 }
 section.block-redfin-connect button.connect-button {
   line-height: 23px;
