@@ -1,0 +1,43 @@
+<?php
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_entity_view_alter().
+ */
+function redfin_tweaks_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  if ($entity->getEntityTypeId() != 'node') {
+    return;
+  }
+
+  if ($entity->bundle() != 'job') {
+    return;
+  }
+
+  if ($build['#view_mode'] != 'teaser') {
+    $build['apply_now_link'] = [
+      '#type' => 'link',
+      '#attributes' => [
+        'class' => [ 'btn', 'btn-default', 'btn-apply' ],
+      ],
+      '#title' => t('Apply Now'),
+      '#url' => Url::fromUri('/contact/candidate_interest', [
+        'query' => [ 'ref' => $entity->field_advert_ref_no->value ],
+      ]),
+    ];
+  }
+}
+
+/**
+ * Implements hook_form_contact_message_candidate_interest_form_alter()
+ */
+function redfin_tweaks_form_contact_message_candidate_interest_form_alter(&$form, FormStateInterface $form_state) {
+  $query = \Drupal::requestStack()->getCurrentRequest()->query;
+
+  if (!empty($query->get('ref'))) {
+    $form['field_advert_ref_no'][0]['value']['#default_value'] = $query->get('ref');
+  }
+}

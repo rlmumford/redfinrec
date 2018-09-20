@@ -194,16 +194,16 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
 
     $social_links = [];
     if ($this->configuration['linkedin']) {
-      $social_links[] = '<a href="https://www.linkedin.com/'.$this->configuration['linkedin'].'"><i class="spaceright fab fa-linkedin-in"></i></a>';
+      $social_links[] = '<a href="https://www.linkedin.com/'.$this->configuration['linkedin'].'" target="_blank"><i class="spaceright fab fa-linkedin-in"></i></a>';
     }
     if ($this->configuration['facebook']) {
-      $social_links[] = '<a href="https://www.facebook.com/'.$this->configuration['facebook'].'"><i class="spaceright fab fa-facebook-f"></i></a>';
+      $social_links[] = '<a href="https://www.facebook.com/'.$this->configuration['facebook'].'" target="_blank"><i class="spaceright fab fa-facebook-f"></i></a>';
     }
     if ($this->configuration['twitter']) {
-      $social_links[] = '<a href="https://twitter.com/'.$this->configuration['twitter'].'"><i class="spaceright fab fa-twitter"></i></a>';
+      $social_links[] = '<a href="https://twitter.com/'.$this->configuration['twitter'].'" target="_blank"><i class="spaceright fab fa-twitter"></i></a>';
     }
     if ($this->configuration['instagram']) {
-      $social_links[] = '<a href="https://www.instagram.com/'.$this->configuration['instagram'].'"><i class="fab fa-instagram"></i></a>';
+      $social_links[] = '<a href="https://www.instagram.com/'.$this->configuration['instagram'].'" target="_blank"><i class="fab fa-instagram"></i></a>';
     }
     if (!empty($social_links)) {
       $build['connect_information']['social'] = [
