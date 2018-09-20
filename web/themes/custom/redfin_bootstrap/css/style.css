@@ -52,6 +52,7 @@ a.name.navbar-brand {
 }
 .header-wrapper.image-carrots {
   background: url(../images/carrots.jpg);
+  background-size: 100%;
 }
 .header-wrapper.image-corn {
   background: url(../images/corn.jpg);
@@ -70,6 +71,7 @@ a.name.navbar-brand {
 }
 .path-jobs .header-wrapper,
 .page-node-type-job .header-wrapper,
+.path-taxonomy .header-wrapper,
 .header-wrapper.image-truck {
   background: url(../images/truck.jpg);
   background-size: 100%;
@@ -93,13 +95,32 @@ a.name.navbar-brand {
     background-size: unset;
   }
 }
+@media screen and (max-width: 1700px) {
+  .path-jobs .header-wrapper,
+  .page-node-type-job .header-wrapper,
+  .path-taxonomy .header-wrapper,
+  .header-wrapper.image-truck {
+    background-size: 1700px;
+    background-position-x: center;
+    background-position-y: -370px;
+  }
+  .page-node-type-job .header-wrapper {
+    background-position-y: -470px;
+  }
+}
+@media screen and (max-width: 1850px) {
+  .header-wrapper.image-tomato {
+    background-size: 1850px;
+    background-position-y: -670px;
+  }
+}
 
 .header nav {
   clear: both;
   text-align: center;
 }
 .header nav ul.menu--front-navigation {
-  width: 485px;
+  width: 486px;
   display: inline-block;
   float: none;
 }
@@ -159,7 +180,13 @@ h1.page-header {
   font-size: 2em;
   padding-left: 1em;
   line-height: 1em;
-  text-align: left;
+}
+h1.page-header span {
+  background: #B61C1C;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
 }
 
 .page-node-type-job div.author {
@@ -168,11 +195,16 @@ h1.page-header {
 .page-node-type-job article.job.full .field {
   clear: both;
 }
+.page-node-type-job article.job.full .field--label-inline {
+  font-size: 1.2em;
+}
 .page-node-type-job article.job.full .field--type-entity-reference div.field--items > div {
   margin-right: 1em;
   float: left;
 }
-
+.page-node-type-job .region-content p {
+  margin: 10px 0px;
+}
 
 .footer-wrapper {
   background-color: #b61c1c;
