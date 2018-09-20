@@ -45,6 +45,7 @@ a.name.navbar-brand {
 .header-wrapper.image-thanks {
   background: url(../images/thanks_large.jpg);
 }
+.path-contact .header-wrapper, 
 .header-wrapper.image-apples {
   background: url(../images/apples.jpg);
   background-size: 100%;
@@ -171,19 +172,6 @@ a.name.navbar-brand {
     font-size: 18px;
   }
 }
-
-@media screen and (max-width: 600px) {
-  p {
-    margin: 10px 20px;
-  }
-  .page-node-type-job .header-wrapper .header {
-    padding-bottom: none;
-  }
-  .footer nav ul li a {
-    line-height: 20px;
-  }
-}
- 
 h1.page-header {
   clear: both;
   border-bottom: none;
@@ -326,6 +314,9 @@ section.block-redfin-connect .connect-info a:hover {
   text-decoration: none;
   margin: 0;
 }
+section.block-redfin-connect .connect-info a.use-ajax {
+  display: block;
+}
 section.block-redfin-connect .connect-info label {
   display: none;
 }
@@ -378,6 +369,14 @@ article.teaser p {
 div.content a.btn-apply {
   position: absolute;
   right: 0;
+  top: 0;
+}
+article.teaser div.content a.btn-apply {
+  top: -40px;
+}
+article.full {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 div.content {
   position: relative;
@@ -386,3 +385,28 @@ div.content {
 a.feed-icon {
   display: none;
 }
+
+@media screen and (max-width: 770px) {
+  .region-content p {
+    margin: 10px 20px;
+  }
+  .page-node-type-job .header-wrapper .header {
+    padding-bottom: 0;
+  }
+  .footer nav ul li a {
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  div.region.region-header {
+    text-align: center;
+  }
+  a.logo.navbar-btn {
+    float: none !important;
+  }
+  section.block-redfin-connect {
+    display: none;
+  }
+}
+ 

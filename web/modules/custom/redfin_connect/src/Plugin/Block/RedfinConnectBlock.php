@@ -212,6 +212,18 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       ];
     }
 
+    $build['connect_information']['client_contact'] = [
+      '#type' => 'link',
+      '#title' => $this->t('Clients'),
+      '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'client_interest']),
+      '#attributes' => [
+        'class' => ['use-ajax', 'client-contact'],
+        'data-dialog-type' => 'modal',
+      ],
+      '#attached' => [
+        'library' => ['core/drupal.dialog.ajax'],
+      ],
+    ];
     $build['connect_information']['candidate_contact'] = [
       '#type' => 'link',
       '#title' => $this->t('Candidates'),
@@ -223,14 +235,13 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#attached' => [
         'library' => ['core/drupal.dialog.ajax'],
       ],
-      '#suffix' => '| ',
     ];
-    $build['connect_information']['client_contact'] = [
+    $build['connect_information']['colleague_contact'] = [
       '#type' => 'link',
-      '#title' => $this->t('Clients'),
-      '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'client_interest']),
+      '#title' => $this->t('Colleagues'),
+      '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'colleague_interest']),
       '#attributes' => [
-        'class' => ['use-ajax', 'client-contact'],
+        'class' => ['use-ajax', 'colleague-contact'],
         'data-dialog-type' => 'modal',
       ],
       '#attached' => [
