@@ -120,6 +120,7 @@ a.name.navbar-brand {
   .header-wrapper.image-apples {
     background: url(../images/apples_1070.jpg);
     background-size: 1070px;
+    background-position-y: -200px;
   }
 }
 
@@ -169,12 +170,20 @@ a.name.navbar-brand {
     border-width: 2px;
     font-size: 18px;
   }
+}
 
+@media screen and (max-width: 600px) {
   p {
     margin: 10px 20px;
   }
+  .page-node-type-job .header-wrapper .header {
+    padding-bottom: none;
+  }
+  .footer nav ul li a {
+    line-height: 20px;
+  }
 }
-
+ 
 h1.page-header {
   clear: both;
   border-bottom: none;
@@ -186,15 +195,15 @@ h1.page-header {
 }
 .page-node-type-job h1.page-header {
   font-size: 2em;
-  padding-left: 1em;
   line-height: 1em;
 }
-h1.page-header span {
+h1.page-header > span {
   background: #B61C1C;
   padding: 10px 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+  line-height: 2em;
 }
 
 .page-node-type-job div.author {
@@ -271,6 +280,9 @@ section.block-redfin-connect {
   z-index: 10;
   margin-top: 15px;
 }
+a.btn-apply,
+a.btn-apply:focus,
+a.btn-apply:active,
 section.block-redfin-connect button.connect-button {
   line-height: 23px;
   color: #FFFFFF;
@@ -283,12 +295,14 @@ section.block-redfin-connect button.connect-button {
   margin: 7px 25px;
   margin-right: 0px;
 }
+a.btn-apply:hover,
 section.block-redfin-connect button.connect-button:hover {
   cursor: pointer;
   color: #FFFFFF;
   background-color: #b61c1c;
   border-color: #b61c1c!important;
 }
+a.btn-apply:focus,
 section.block-redfin-connect button.connect-button:focus {
   outline: none!important;
 }
@@ -359,6 +373,14 @@ article.teaser footer {
 article.teaser p {
   margin-left: initial;
   margin-right: initial;
+}
+
+div.content a.btn-apply {
+  position: absolute;
+  right: 0;
+}
+div.content {
+  position: relative;
 }
 
 a.feed-icon {
