@@ -100,6 +100,7 @@ a.name.navbar-brand {
   .page-node-type-job .header-wrapper,
   .path-taxonomy .header-wrapper,
   .header-wrapper.image-truck {
+    background: url(../images/truck_1700.jpg);
     background-size: 1700px;
     background-position-x: center;
     background-position-y: -370px;
@@ -110,6 +111,7 @@ a.name.navbar-brand {
 }
 @media screen and (max-width: 1850px) {
   .header-wrapper.image-tomato {
+    background: url(../images/truck_1850.jpg);
     background-size: 1850px;
     background-position-y: -670px;
   }
