@@ -111,7 +111,7 @@ a.name.navbar-brand {
 }
 @media screen and (max-width: 1850px) {
   .header-wrapper.image-tomato {
-    background: url(../images/truck_1850.jpg);
+    background: url(../images/tomato_1850.jpg);
     background-size: 1850px;
     background-position-y: -670px;
   }
@@ -322,6 +322,7 @@ section.block-redfin-connect .connect-info a.client-contact {
   margin-left: 5px;
 }
 
+p.card,
 article.teaser {
   padding: 24px;
   border-radius: 2px;
@@ -330,6 +331,7 @@ article.teaser {
   box-sizing: border-box;
   margin-top: 10px;
 }
+p.card,
 article.teaser:hover {
   background-color: rgba(238, 238, 238);
 }
@@ -351,4 +353,8 @@ article.teaser footer {
 article.teaser p {
   margin-left: initial;
   margin-right: initial;
+}
+
+a.feed-icon {
+  display: none;
 }
