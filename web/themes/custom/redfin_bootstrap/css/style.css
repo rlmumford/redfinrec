@@ -374,7 +374,7 @@ div.content a.btn-apply {
 article.teaser div.content a.btn-apply {
   top: -40px;
 }
-article.full {
+div.region-content {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -409,4 +409,21 @@ a.feed-icon {
     display: none;
   }
 }
- 
+
+div.modal-body div.field--name-field-phone label,
+div.modal-body div.field--name-field-current-company label,
+div.modal-body div.field--name-field-current-job-title label, 
+div.modal-body div.field--name-field-current-location label,
+div.modal-body div.field--name-field-advert-ref-no label,
+div.modal-body div.field--name-field-description label {
+  display: none;
+}
+
+.field--type-entity-reference .field--item:after {
+    content: '|';
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.field--type-entity-reference .field--item:last-child:after {
+    content: '';
+}
