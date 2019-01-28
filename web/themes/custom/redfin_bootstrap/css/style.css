@@ -130,7 +130,7 @@ a.name.navbar-brand {
   text-align: center;
 }
 .header nav ul.menu--front-navigation {
-  width: 486px;
+  width: 490px;
   display: inline-block;
   float: none;
 }
@@ -420,10 +420,18 @@ div.modal-body div.field--name-field-description label {
 }
 
 .field--type-entity-reference .field--item:after {
-    content: '|';
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+  content: '|';
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 .field--type-entity-reference .field--item:last-child:after {
-    content: '';
+  content: '';
+}
+
+.region-gutter nav {
+  display: inline-block;
+  float: right;
+}
+.region-gutter > span {
+  line-height: 50px;
 }
