@@ -9,6 +9,11 @@ body {
   font-size: 14px;
 }
 
+blockquote {
+  font-size: 14px;
+  border-left: 5px solid #B61C1C;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin-top: 0px;
@@ -45,7 +50,7 @@ a.name.navbar-brand {
 .header-wrapper.image-thanks {
   background: url(../images/thanks_large.jpg);
 }
-.path-contact .header-wrapper, 
+.path-contact .header-wrapper,
 .header-wrapper.image-apples {
   background: url(../images/apples.jpg);
   background-size: 100%;
@@ -257,6 +262,14 @@ h1.page-header > span {
   margin: 10px 100px;
   font-size: 1.2em;
 }
+.region-content blockquote {
+  margin: 10px 100px;
+  background: #F1F1F1;
+}
+.region-content blockquote p {
+  margin: 10px 50px;
+  color: #101010;
+}
 .region-content div.row p {
   margin: 10px;
 }
@@ -276,23 +289,42 @@ section.block-redfin-connect button.connect-button {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid #B61C1C;
+  border: 2px solid #B61C1C;
   border-radius: 25px;
   background-color: #B61C1C;
   padding: 10px 15px;
   margin: 7px 25px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 a.btn-apply:hover,
 section.block-redfin-connect button.connect-button:hover {
   cursor: pointer;
-  color: #FFFFFF;
-  background-color: #b61c1c;
+  color: #b61c1c;
+  background: #FFFFFF;
   border-color: #b61c1c!important;
 }
 a.btn-apply:focus,
 section.block-redfin-connect button.connect-button:focus {
   outline: none!important;
+}
+section.block-redfin-connect button.connect-button.connect-button-open {
+  border-radius: 25px 25px 0 0;
+  color: #B61C1C;
+  background: #FFFFFF;
+  border-bottom: none;
+  overflow: visible;
+  z-index: 100;
+}
+section.block-redfin-connect button.connect-button.connect-button-open::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 27px;
+  right: 2px;
+  bottom: -2px;
+  background: #FFFFFF;
+  display: block;
 }
 section.block-redfin-connect .connect-info {
   position: absolute;
@@ -301,6 +333,11 @@ section.block-redfin-connect .connect-info {
   width: 400px;
   height: auto;
   text-align: right;
+  background: #FFFFFF;
+  border: 2px solid #B61C1C;
+  padding: 10px;
+  border-radius: 5px 0px 5px 5px;
+  color: #333333;
 }
 section.block-redfin-connect .connect-info .form-item {
   margin-bottom: 0;
@@ -313,6 +350,8 @@ section.block-redfin-connect .connect-info a:hover {
   color: #333333;
   text-decoration: none;
   margin: 0;
+  overflow: visible;
+  z-index: -1;
 }
 section.block-redfin-connect .connect-info a.use-ajax {
   display: block;
@@ -326,11 +365,18 @@ section.block-redfin-connect .connect-info a span {
 section.block-redfin-connect .connect-info span.social a {
   margin-left: 20px;
 }
-section.block-redfin-connect .connect-info a.candidate-contact {
-  margin-right: 5px;
+
+section.block-redfin-connect .connect-info a.contact-modal-link {
+  display: inline-block;
+  border-right: 2px solid #B61C1C;
+  padding: 0px 5px;
 }
-section.block-redfin-connect .connect-info a.client-contact {
-  margin-left: 5px;
+section.block-redfin-connect .connect-info a.contact-modal-link.colleague-contact {
+  border-right: none;
+  padding-right: 0px;
+}
+section.block-redfin-connect .connect-info a.contact-modal-link:hover {
+  color: #B61C1C;
 }
 
 p.card,
@@ -344,7 +390,7 @@ article.teaser {
 }
 p.card,
 article.teaser:hover {
-  background-color: rgba(238, 238, 238);
+  background-color: rgba(238, 238, 238, 1);
 }
 article.teaser h2 {
   padding-left: 0;
@@ -412,7 +458,7 @@ a.feed-icon {
 
 div.modal-body div.field--name-field-phone label,
 div.modal-body div.field--name-field-current-company label,
-div.modal-body div.field--name-field-current-job-title label, 
+div.modal-body div.field--name-field-current-job-title label,
 div.modal-body div.field--name-field-current-location label,
 div.modal-body div.field--name-field-advert-ref-no label,
 div.modal-body div.field--name-field-description label {
@@ -434,4 +480,24 @@ div.modal-body div.field--name-field-description label {
 }
 .region-gutter > span {
   line-height: 50px;
+}
+
+.row.quotebox {
+  margin: 10px 100px;
+  font-size: 14px;
+  background: #F1F1F1;
+  padding: 10px 20px;
+  border-left: 5px solid #B61C1C;
+}
+
+.row.quote {
+  margin: 10px 50px;
+  color: #101010;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.row.byline {
+  margin: 0;
+  text-align: right;
 }

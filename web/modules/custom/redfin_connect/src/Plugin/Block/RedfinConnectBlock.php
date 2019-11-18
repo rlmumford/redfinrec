@@ -217,7 +217,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#title' => $this->t('Clients'),
       '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'client_interest']),
       '#attributes' => [
-        'class' => ['use-ajax', 'client-contact'],
+        'class' => ['use-ajax', 'client-contact', 'contact-modal-link'],
         'data-dialog-type' => 'modal',
       ],
       '#attached' => [
@@ -229,7 +229,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#title' => $this->t('Candidates'),
       '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'candidate_interest']),
       '#attributes' => [
-        'class' => ['use-ajax', 'candidate-contact'],
+        'class' => ['use-ajax', 'candidate-contact', 'contact-modal-link'],
         'data-dialog-type' => 'modal',
       ],
       '#attached' => [
@@ -241,7 +241,7 @@ class RedfinConnectBlock extends BlockBase implements ContainerFactoryPluginInte
       '#title' => $this->t('Colleagues'),
       '#url' => Url::fromRoute('entity.contact_form.canonical', ['contact_form' => 'colleague_interest']),
       '#attributes' => [
-        'class' => ['use-ajax', 'colleague-contact'],
+        'class' => ['use-ajax', 'colleague-contact', 'contact-modal-link'],
         'data-dialog-type' => 'modal',
       ],
       '#attached' => [
