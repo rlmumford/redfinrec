@@ -3,6 +3,17 @@
 use Drupal\Core\Config\FileStorage;
 
 /**
+ * Implements hook_update_dependencies()
+ */
+function redfin_tweaks_update_dependencies() {
+  $dependencies['redfin_tweaks'][8002] = [
+    'ckeditor_youtube' => 8001,
+  ];
+
+  return $dependencies;
+}
+
+/**
  * Add header job image and more values.
  */
 function redfin_tweaks_update_8001() {
@@ -18,4 +29,15 @@ function redfin_tweaks_update_8001() {
   foreach ($configs_to_install as $name) {
     $config_storage->write($name, $source->read($name));
   }
+}
+
+
+/**
+ * Add the CKEditor Youtube default configuration.
+ */
+function redfin_tweaks_update_8002() {
+  $config_factory = \Drupal::configFactory();
+  $config = $config_factory->getEditable('ckeditor_youtube.settings');
+  $config->set('library_path', 'libraries/youtube/youtube');
+  $config->save(TRUE);
 }

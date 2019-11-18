@@ -28,18 +28,22 @@
                     "composer/installers": "~1.0"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:rlmumford/composer-patches.git"
         }
     ],
     "require": {
         "ckeditor-plugin/youtube": "^2.1",
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6",
+        "cweagans/composer-patches": "dev-dev-relative-patches",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/bootstrap": "^3.11",
         "drupal/ckeditor_widgets": "1.x-dev",
         "drupal/ckeditor_youtube": "^1.1",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.3",
+        "drupal/core": "^8.7",
         "drupal/fontawesome": "^2.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
@@ -47,7 +51,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.5.3"
+        "webflo/drupal-core-require-dev": "^8.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -80,9 +84,6 @@
     "extra": {
         "enable-patching": true,
         "patches": {
-            "drupal/ckeditor_youtube": {
-                "Compatable with Composer Plugin": "./patches/ckeditor_youtube-composer_compat.patch"
-            },
             "drupal/ckeditor_widgets": {
                 "Remove unsupported widgets": "https://www.drupal.org/files/issues/2018-08-30/2932639-7.patch",
                 "Fix supported widget buttons": "https://www.drupal.org/files/issues/2018-08-23/2994701-2.patch"
