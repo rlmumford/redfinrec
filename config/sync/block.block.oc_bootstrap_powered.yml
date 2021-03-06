@@ -1,0 +1,22 @@
+uuid: b32c71a4-5c15-4db5-b810-80e40099704d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: oc_bootstrap_powered
+theme: oc_bootstrap
+region: gutter
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

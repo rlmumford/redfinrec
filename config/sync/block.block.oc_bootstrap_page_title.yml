@@ -1,0 +1,27 @@
+uuid: 77c7f7c9-3621-431d-8869-d3a162e1d534
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: oc_bootstrap_page_title
+theme: oc_bootstrap
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

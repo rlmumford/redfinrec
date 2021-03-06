@@ -1,0 +1,30 @@
+uuid: ef16b561-d10d-4166-91c6-b28e6eddb7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.front-navigation
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+id: oc_bootstrap_frontnavigation
+theme: oc_bootstrap
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:front-navigation'
+settings:
+  id: 'system_menu_block:front-navigation'
+  label: 'Front Navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

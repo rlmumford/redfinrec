@@ -1,0 +1,22 @@
+uuid: b6a40e9d-21a8-4764-a1d1-63bb72880f71
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: oc_bootstrap_content
+theme: oc_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

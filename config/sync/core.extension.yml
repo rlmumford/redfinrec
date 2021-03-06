@@ -52,9 +52,10 @@ theme:
   stable: 0
   classy: 0
   bartik: 0
-  seven: 0
   bootstrap: 0
   redfin_bootstrap: 0
+  oc_bootstrap: 0
+  claro: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

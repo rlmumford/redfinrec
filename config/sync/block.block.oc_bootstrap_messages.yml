@@ -1,15 +1,15 @@
-uuid: a245dac2-46ba-4b2d-b8e1-62cc4a26e54f
+uuid: 4a774d92-ff1f-4c27-ad34-c4835d57c6ef
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - seven
+    - oc_bootstrap
 _core:
-  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
-id: seven_messages
-theme: seven
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: oc_bootstrap_messages
+theme: oc_bootstrap
 region: highlighted
 weight: 0
 provider: null

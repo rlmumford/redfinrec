@@ -89,3 +89,4 @@ content:
     third_party_settings: {  }
 hidden:
   links: true
+  redfin_header_image: true
