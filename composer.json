@@ -38,20 +38,20 @@
         "ckeditor-plugin/youtube": "^2.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "dev-dev-relative-patches",
-        "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/core-composer-scaffold": "^8.9",
         "drupal/bootstrap": "^3.11",
         "drupal/ckeditor_widgets": "1.x-dev",
         "drupal/ckeditor_youtube": "^1.1",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.7",
+        "drupal/core-recommended": "^8.9",
         "drupal/fontawesome": "^2.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
-        "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.7"
+        "drupal/devel": "^1.2",
+        "drupal/core-dev": "^8.9"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -96,6 +96,15 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
+            "initial": {
+                ".editorconfig": "../.editorconfig",
+                ".gitattributes": "../.gitattributes"
+            }
         }
     }
 }
