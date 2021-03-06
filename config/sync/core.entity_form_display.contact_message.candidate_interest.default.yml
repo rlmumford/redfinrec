@@ -1,0 +1,71 @@
+uuid: 0b1398b9-d082-469e-8827-bae7cd09f06a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.field.contact_message.candidate_interest.field_advert_ref_no
+    - field.field.contact_message.candidate_interest.field_current_company
+    - field.field.contact_message.candidate_interest.field_current_job_title
+    - field.field.contact_message.candidate_interest.field_current_location
+    - field.field.contact_message.candidate_interest.field_cv
+    - field.field.contact_message.candidate_interest.field_phone
+  module:
+    - file
+    - telephone
+id: contact_message.candidate_interest.default
+targetEntityType: contact_message
+bundle: candidate_interest
+mode: default
+content:
+  copy:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_advert_ref_no:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: 'Reference No.'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_current_location:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: 'Current Location'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cv:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_phone:
+    weight: 3
+    settings:
+      placeholder: 'Phone No.'
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  mail:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_current_company: true
+  field_current_job_title: true
+  message: true
+  preview: true
+  subject: true

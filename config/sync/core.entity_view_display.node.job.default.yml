@@ -1,0 +1,95 @@
+uuid: 277124c7-083d-42df-9b86-b17ca24bbe95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job.body
+    - field.field.node.job.field_advert_ref_no
+    - field.field.node.job.field_benefits
+    - field.field.node.job.field_category
+    - field.field.node.job.field_job_function
+    - field.field.node.job.field_location
+    - field.field.node.job.field_max_salary
+    - field.field.node.job.field_min_salary
+    - field.field.node.job.redfin_header_image
+    - node.type.job
+  module:
+    - text
+    - user
+id: node.job.default
+targetEntityType: node
+bundle: job
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_advert_ref_no:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_benefits:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_category:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_job_function:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_location:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_max_salary:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_min_salary:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  redfin_header_image: true

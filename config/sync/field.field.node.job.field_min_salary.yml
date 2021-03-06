@@ -1,0 +1,23 @@
+uuid: 3ab2e465-8e2b-44a6-8062-82f52bbf0d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_min_salary
+    - node.type.job
+id: node.job.field_min_salary
+field_name: field_min_salary
+entity_type: node
+bundle: job
+label: 'Min. Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

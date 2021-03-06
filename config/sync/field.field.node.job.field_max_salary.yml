@@ -1,0 +1,23 @@
+uuid: 981c7868-e6ee-46da-a133-e189909acaf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_salary
+    - node.type.job
+id: node.job.field_max_salary
+field_name: field_max_salary
+entity_type: node
+bundle: job
+label: 'Max. Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

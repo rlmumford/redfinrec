@@ -1,0 +1,29 @@
+uuid: e9eb281c-0b3c-4575-a44f-8e3783e1cc8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_function
+    - node.type.job
+    - taxonomy.vocabulary.tags
+id: node.job.field_job_function
+field_name: field_job_function
+entity_type: node
+bundle: job
+label: 'Job Function'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

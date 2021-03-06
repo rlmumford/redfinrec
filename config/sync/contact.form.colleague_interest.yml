@@ -1,0 +1,12 @@
+uuid: 0f0d52b2-fe8f-42e4-97c9-f0f7f09e7bda
+langcode: en
+status: true
+dependencies: {  }
+id: colleague_interest
+label: 'Colleague Interest'
+recipients:
+  - info@redfinrecruitmentusa.com
+reply: ''
+weight: 0
+message: ''
+redirect: /thanks

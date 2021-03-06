@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.redfin_header_image
+field_name: redfin_header_image
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: about
+      label: About
+    -
+      value: action
+      label: Action
+    -
+      value: partner
+      label: Partner
+    -
+      value: thanks
+      label: Thanks
+    -
+      value: work
+      label: Work
+    -
+      value: raspberry
+      label: Raspberry
+    -
+      value: apples
+      label: Apples
+    -
+      value: carrots
+      label: Carrots
+    -
+      value: corn
+      label: Corn
+    -
+      value: tomato
+      label: Tomatoes
+    -
+      value: truck
+      label: Truck
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

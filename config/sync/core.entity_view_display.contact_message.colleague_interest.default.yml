@@ -1,0 +1,31 @@
+uuid: 20a1d524-f1f4-4470-952e-7729b7be16f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.colleague_interest
+    - field.field.contact_message.colleague_interest.field_cv
+  module:
+    - file
+id: contact_message.colleague_interest.default
+targetEntityType: contact_message
+bundle: colleague_interest
+mode: default
+content:
+  field_cv:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

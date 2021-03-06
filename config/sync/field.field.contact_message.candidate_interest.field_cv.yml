@@ -1,0 +1,27 @@
+uuid: 3cf05a89-5a37-417b-ab26-56220347095f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.storage.contact_message.field_cv
+  module:
+    - file
+id: contact_message.candidate_interest.field_cv
+field_name: field_cv
+entity_type: contact_message
+bundle: candidate_interest
+label: Resume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'cv/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx'
+  max_filesize: 10MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

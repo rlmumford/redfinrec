@@ -1,0 +1,81 @@
+uuid: 43201384-a22b-44cc-b8eb-b01e27e665b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.client_interest
+    - field.field.contact_message.client_interest.field_current_company
+    - field.field.contact_message.client_interest.field_current_job_title
+    - field.field.contact_message.client_interest.field_current_location
+    - field.field.contact_message.client_interest.field_cv
+    - field.field.contact_message.client_interest.field_description
+    - field.field.contact_message.client_interest.field_phone
+  module:
+    - file
+    - telephone
+id: contact_message.client_interest.default
+targetEntityType: contact_message
+bundle: client_interest
+mode: default
+content:
+  field_current_company:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: 'Company Name'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_current_job_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: 'Job Title'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_current_location:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: Location
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cv:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_description:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: 'Description of request'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: Phone
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  message: true
+  preview: true
+  subject: true

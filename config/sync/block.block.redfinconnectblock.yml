@@ -1,0 +1,28 @@
+uuid: 6abdaf77-fbff-4c58-9831-92b709171d7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - redfin_connect
+  theme:
+    - redfin_bootstrap
+id: redfinconnectblock
+theme: redfin_bootstrap
+region: header
+weight: -4
+provider: null
+plugin: redfin_connect_block
+settings:
+  id: redfin_connect_block
+  label: 'Redfin Connect Block'
+  provider: redfin_connect
+  label_display: '0'
+  telephone: ''
+  email: info@redfinrecruitment.com
+  address_line1: 'The Enterprise Centre'
+  address_line2: 'Manchester, United Kingdom'
+  linkedin: company/redfinrecruitmentltd
+  facebook: ''
+  twitter: ''
+  instagram: ''
+visibility: {  }

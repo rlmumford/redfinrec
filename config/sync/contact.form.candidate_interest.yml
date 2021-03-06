@@ -1,0 +1,12 @@
+uuid: 65fcdecf-b388-4c29-b67d-29578b4dedc4
+langcode: en
+status: true
+dependencies: {  }
+id: candidate_interest
+label: 'Candidate Interest'
+recipients:
+  - info@redfinrecruitmentusa.com
+reply: ''
+weight: 0
+message: ''
+redirect: /thanks

@@ -1,0 +1,19 @@
+uuid: f0822e56-0778-4a9c-a861-2ea907ad8827
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.client_interest
+    - field.storage.contact_message.field_current_location
+id: contact_message.client_interest.field_current_location
+field_name: field_current_location
+entity_type: contact_message
+bundle: client_interest
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

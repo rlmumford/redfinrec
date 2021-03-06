@@ -1,0 +1,19 @@
+uuid: bd5e1b2f-d226-4d5d-9ed8-622c4aad5d40
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.storage.contact_message.field_current_location
+id: contact_message.candidate_interest.field_current_location
+field_name: field_current_location
+entity_type: contact_message
+bundle: candidate_interest
+label: 'Current Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

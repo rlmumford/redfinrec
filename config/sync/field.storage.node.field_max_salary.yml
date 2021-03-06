@@ -1,0 +1,20 @@
+uuid: ae22aba4-7a42-4667-a630-29f9786b1d68
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_max_salary
+field_name: field_max_salary
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

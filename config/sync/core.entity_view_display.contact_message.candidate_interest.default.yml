@@ -1,0 +1,75 @@
+uuid: 0cc5da94-1868-41fb-ad2b-4884f15af33f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.field.contact_message.candidate_interest.field_advert_ref_no
+    - field.field.contact_message.candidate_interest.field_current_company
+    - field.field.contact_message.candidate_interest.field_current_job_title
+    - field.field.contact_message.candidate_interest.field_current_location
+    - field.field.contact_message.candidate_interest.field_cv
+    - field.field.contact_message.candidate_interest.field_phone
+  module:
+    - file
+id: contact_message.candidate_interest.default
+targetEntityType: contact_message
+bundle: candidate_interest
+mode: default
+content:
+  field_advert_ref_no:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_current_company:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_current_job_title:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_current_location:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cv:
+    weight: 5
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_phone:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 12e21339-26c8-460a-ad2f-35abb8f3347c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - redfin_bootstrap
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: redfin_bootstrap_content
+theme: redfin_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: feae889a-9feb-48d7-9f7d-93078b3a32f6
+langcode: en
+status: true
+dependencies: {  }
+id: client_interest
+label: 'Client Interest'
+recipients:
+  - info@redfinrecruitmentusa.com
+reply: ''
+weight: 0
+message: ''
+redirect: /thanks

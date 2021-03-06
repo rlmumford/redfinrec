@@ -1,0 +1,21 @@
+uuid: ef338e46-73ef-4f30-ac91-7af127243afb
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.storage.contact_message.field_phone
+  module:
+    - telephone
+id: contact_message.candidate_interest.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: candidate_interest
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

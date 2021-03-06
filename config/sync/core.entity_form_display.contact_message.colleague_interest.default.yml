@@ -1,0 +1,36 @@
+uuid: 2b0e157c-1715-4588-854a-63c392827022
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.colleague_interest
+    - field.field.contact_message.colleague_interest.field_cv
+  module:
+    - file
+id: contact_message.colleague_interest.default
+targetEntityType: contact_message
+bundle: colleague_interest
+mode: default
+content:
+  field_cv:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  message: true
+  preview: true
+  subject: true

@@ -1,0 +1,30 @@
+uuid: ab1ebc59-8838-456c-9600-6e71295178e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.front-navigation
+  module:
+    - system
+  theme:
+    - redfin_bootstrap
+id: frontnavigation
+theme: redfin_bootstrap
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:front-navigation'
+settings:
+  id: 'system_menu_block:front-navigation'
+  label: 'Front Navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+uuid: 3ec82c4c-4a15-44c4-87a2-c88d674f3e8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.client_interest
+    - field.storage.contact_message.field_cv
+  module:
+    - file
+id: contact_message.client_interest.field_cv
+field_name: field_cv
+entity_type: contact_message
+bundle: client_interest
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'docs/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx xls xlsx jpg png'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

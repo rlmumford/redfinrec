@@ -1,0 +1,19 @@
+uuid: f9852283-3f3b-4dd3-98d8-4cb8b9832a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.storage.contact_message.field_current_job_title
+id: contact_message.candidate_interest.field_current_job_title
+field_name: field_current_job_title
+entity_type: contact_message
+bundle: candidate_interest
+label: 'Current Job Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

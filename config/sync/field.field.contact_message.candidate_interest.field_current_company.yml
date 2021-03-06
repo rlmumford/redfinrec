@@ -1,0 +1,19 @@
+uuid: 39d062a7-dab3-42d0-a9e5-af3be21331ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.candidate_interest
+    - field.storage.contact_message.field_current_company
+id: contact_message.candidate_interest.field_current_company
+field_name: field_current_company
+entity_type: contact_message
+bundle: candidate_interest
+label: 'Current Company'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

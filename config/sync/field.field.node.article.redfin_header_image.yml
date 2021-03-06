@@ -1,0 +1,23 @@
+uuid: af294953-24b3-41be-ac72-5d0af49d4805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.redfin_header_image
+    - node.type.article
+  module:
+    - options
+_core:
+  default_config_hash: 84bXfWH-vS94sWsXb-l0acwCxXtcbJBHP4lWEWLivIo
+id: node.article.redfin_header_image
+field_name: redfin_header_image
+entity_type: node
+bundle: article
+label: 'Page Header Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
