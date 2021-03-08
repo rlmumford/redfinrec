@@ -1,0 +1,18 @@
+uuid: eb2ac29f-96e7-4fbe-a230-2ec9b25f1d8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - divisions
+    parent: 'divisions:'
+name: Division
+type: division
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,30 @@
+uuid: 2b621ecc-7e26-497d-85b9-e2da4c114da2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.divisions
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+id: divisions
+theme: oc_bootstrap
+region: content
+weight: -3
+provider: null
+plugin: 'system_menu_block:divisions'
+settings:
+  id: 'system_menu_block:divisions'
+  label: 'Divisions Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/divisions\r\n/divisions/*"
+    negate: false
+    context_mapping: {  }

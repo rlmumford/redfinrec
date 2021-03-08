@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies: {  }
 id: candidate_interest
-label: 'Candidate Interest'
+label: Contact
 recipients:
-  - info@redfinrecruitmentusa.com
+  - info@olivercarol.com
 reply: ''
 weight: 0
 message: ''

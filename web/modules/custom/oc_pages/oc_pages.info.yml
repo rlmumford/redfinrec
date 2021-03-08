@@ -1,0 +1,5 @@
+name: Oliver Carol Pages
+type: module
+description: Provides static pages for the oliver carol site.
+package: Oliver Carol
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,15 @@
+oc_pages.home:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\oc_pages\Controller\PagesController::home'
+    _title: 'Home'
+  requirements:
+    _access: 'TRUE'
+oc_pages.divisions:
+  path: '/divisions'
+  defaults:
+    _controller: '\Drupal\oc_pages\Controller\PagesController::divisions'
+    _title: 'Divisions'
+  requirements:
+    _access: 'TRUE'
+

@@ -1,0 +1,4 @@
+oc_pages.divisions:
+  title: 'Divisions'
+  route_name: oc_pages.divisions
+  menu_name: main

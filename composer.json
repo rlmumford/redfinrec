@@ -45,6 +45,7 @@
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-recommended": "^8.9",
         "drupal/fontawesome": "^2.18",
+        "drupal/pathauto": "^1.8",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webmozart/path-util": "^2.3"

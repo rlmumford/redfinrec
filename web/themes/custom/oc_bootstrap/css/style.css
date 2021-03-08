@@ -230,49 +230,6 @@ a.logo.navbar-btn img {
   color: #C77532;
   background: #FFFFFF;
 }
-.header nav ul.menu--front-navigation {
-  width: 490px;
-  display: inline-block;
-  float: none;
-}
-.header nav ul.menu--front-navigation li {
-  margin: 12px;
-  float: left;
-}
-.header nav ul.menu--front-navigation a {
-  display: table-cell;
-  vertical-align: middle;
-  border: solid #B61C1C 24px;
-  color: #222222;
-  background: rgba(255,255,255,0.3);
-  width: 218px;
-  height: 218px;
-  margin: 7px 12px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 2em;
-  font-weight: bold;
-}
-.header nav ul.menu--front-navigation a:hover {
-  background: rgba(255,255,255,0.7);
-}
-
-@media screen and (max-width: 500px) {
-  .header nav ul.menu--front-navigation {
-    width: 100%;
-  }
-  .header nav ul.menu--front-navigation li {
-    float: none;
-    width: auto;
-  }
-  .header nav ul.menu--front-navigation a {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    border-width: 2px;
-    font-size: 18px;
-  }
-}
 h1.page-header {
   clear: both;
   border-bottom: none;
@@ -312,6 +269,58 @@ h1.page-header > span {
 }
 .page-node-type-job .region-content p {
   margin: 10px 0px;
+}
+
+ul.menu--divisions.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+ul.menu.menu--divisions.nav:before {
+  display: none;
+}
+ul.menu--divisions.nav li {
+  background-image: url(../images/card_construction.png);
+  min-height: 140px;
+  display: table;
+}
+ul.menu--divisions.nav li.division-construction {
+  background-image: url(../images/card_construction.png);
+}
+ul.menu--divisions.nav li.division-electronics {
+  background-image: url(../images/card_electronics.png);
+}
+ul.menu--divisions.nav li.division-fmcg {
+  background-image: url(../images/card_fmcg.png);
+}
+ul.menu--divisions.nav li.division-fashion {
+  background-image: url(../images/card_fashion.png);
+}
+ul.menu--divisions.nav li.division-packaging {
+  background-image: url(../images/card_packaging.png);
+}
+ul.menu--divisions.nav li.division-pharma {
+  background-image: url(../images/card_pharma.png);
+}
+ul.menu--divisions.nav li.division-automotive {
+  background-image: url(../images/card_automotive.png);
+}
+ul.menu--divisions.nav li a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto 0;
+  display: table-cell;
+}
+ul.menu--divisions.nav li a:hover {
+  color: #C77532;
+}
+ul.menu--divisions.nav li.active a {
+  color: #C77532;
+  background-color: #EEEEEE;
 }
 
 .footer-wrapper {

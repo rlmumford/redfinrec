@@ -7,14 +7,74 @@
  * Place your custom PHP code in this file.
  */
 
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_preprocess_page_title()
+ *
+ * All divisions pages should have 'Divisions' as the title.
+ */
+function oc_bootstrap_preprocess_page_title(&$variables) {
+  /** @var \Drupal\node\Entity\Node $node */
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node->bundle() == 'division') {
+      $variables['title'] = new TranslatableMarkup('Divisions');
+    }
+  }
+}
+
 /**
  * Implements hook_preprocess_page() to add header image class.
  */
 function oc_bootstrap_preprocess_page(&$variables) {
   $variables['banner_image_class'] = '';
+  /** @var \Drupal\node\Entity\Node $node */
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    if ($node->redfin_header_image->value) {
+    if ($node->hasField('redfin_header_image') && $node->redfin_header_image->value) {
       $variables['banner_image_class'] = 'image-'.$node->redfin_header_image->value;
     }
+    else if ($node->bundle() == 'division') {
+      $variables['banner_image_class'] = 'image-truck';
+    }
   }
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function oc_bootstrap_preprocess_menu(&$variables) {
+  if ($variables['menu_name'] !== 'divisions') {
+    return;
+  }
+
+  foreach ($variables['items'] as &$item) {
+    $title = $item['title'];
+    if (stripos($title, 'construction') !== FALSE) {
+      $item['attributes']->addClass('division-construction');
+    }
+    else if (stripos($title, 'electronics') !== FALSE) {
+      $item['attributes']->addClass('division-electronics');
+    }
+    else if (stripos($title, 'fmcg') !== FALSE) {
+      $item['attributes']->addClass('division-fmcg');
+    }
+    else if (stripos($title, 'fashion') !== FALSE) {
+      $item['attributes']->addClass('division-fashion');
+    }
+    else if (stripos($title, 'packaging') !== FALSE) {
+      $item['attributes']->addClass('division-packaging');
+    }
+    else if (stripos($title, 'printing') !== FALSE) {
+      $item['attributes']->addClass('division-printing');
+    }
+    else if (stripos($title, 'pharma') !== FALSE) {
+      $item['attributes']->addClass('division-pharma');
+    }
+    else if (stripos($title, 'automotive') !== FALSE) {
+      $item['attributes']->addClass('division-automotive');
+    }
+
+
+  }
+
 }

@@ -1,0 +1,23 @@
+uuid: e592fcaa-a94c-492d-b77f-cb09b3b65611
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.division
+  module:
+    - text
+id: node.division.body
+field_name: body
+entity_type: node
+bundle: division
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

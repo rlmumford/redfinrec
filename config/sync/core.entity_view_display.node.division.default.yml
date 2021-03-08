@@ -1,0 +1,28 @@
+uuid: c314df59-a3e1-4d58-9241-353f1bf5e465
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.division.body
+    - node.type.division
+  module:
+    - text
+    - user
+id: node.division.default
+targetEntityType: node
+bundle: division
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

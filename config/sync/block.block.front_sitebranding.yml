@@ -9,7 +9,7 @@ dependencies:
 id: front_sitebranding
 theme: oc_bootstrap
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
