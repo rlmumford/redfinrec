@@ -96,10 +96,13 @@ a.logo.navbar-btn img {
   display: block;
   float: none !important;
   margin-bottom: 40px;
+  margin-right: 0;
 }
 .path-frontpage .region-content a.logo.navbar-btn img {
   width: 500px;
   height: auto;
+  max-width: 100%;
+  margin-right: 0;
 }
 
 .banner-wrapper {
