@@ -135,6 +135,13 @@ a.logo.navbar-btn img {
   background-size: 150%;
   background-position-y: -1300px;
 }
+
+.page-node-type-division .banner-wrapper,
+.path-divisions .banner-wrapper {
+  height: 140px;
+  background: url(../images/strip_hats.png) !important;
+  background-position: 0 !important;
+}
 .path-jobs .banner-wrapper,
 .page-node-type-job .banner-wrapper,
 .path-taxonomy .banner-wrapper,
@@ -275,6 +282,11 @@ ul.menu--divisions.nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+}
+@media screen and (max-width: 990px) {
+  ul.menu--divisions.nav {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 ul.menu.menu--divisions.nav:before {
   display: none;
