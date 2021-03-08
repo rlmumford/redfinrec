@@ -392,6 +392,11 @@ ul.menu--divisions.nav {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (max-width: 500px) {
+  ul.menu--divisions.nav {
+    grid-template-columns: 1fr;
+  }
+}
 ul.menu.menu--divisions.nav:before {
   display: none;
 }
