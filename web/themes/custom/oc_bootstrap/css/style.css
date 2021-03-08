@@ -51,6 +51,7 @@ a.name.navbar-brand {
 a.logo.navbar-btn {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 10px;
 }
 a.logo.navbar-btn img {
   height: 70px;
@@ -72,6 +73,7 @@ a.logo.navbar-btn img {
 .block-oc-socials {
   float: right;
   margin-top: 19px;
+  margin-left: 20px;
 }
 .path-frontpage .block-oc-socials {
   min-width: 0;
@@ -220,27 +222,57 @@ a.logo.navbar-btn img {
   margin-top: -22px;
 }
 
-.header .region-header {
-  text-align: center;
-}
-
 a.hamburger {
+  display: block;
   font-size: 20px;
   height: 34px;
   line-height: 34px;
   width: 34px;
   border: 1px solid #C77532;
   border-radius: 17px;
-  display: inline-block;
   color: #FFFFFF;
   background-color: #C77532;
+  text-align: center;
 }
 a.hamburger:hover {
   background-color: #FFFFFF;
   color: #C77532;
 }
+.header nav {
+  display: inline-block;
+}
 .header nav ul {
   display: none;
+}
+.header nav a.hamburger .fa-bars {
+  display: initial;
+}
+.header nav a.hamburger .fa-times {
+  display: none;
+}
+.header nav.open ul {
+  display: block;
+}
+.header nav.open a.hamburger .fa-bars {
+  display: none;
+}
+.header nav.open a.hamburger .fa-times {
+  display: initial;
+}
+.header nav.open li {
+  float: none;
+  margin-left: 0;
+}
+.header nav.open li a {
+  border: none;
+  background: none;
+  color: #C77532;
+}
+.header nav.open li a:hover {
+  border: none;
+  background: none;
+  color: #C77532;
+  text-decoration: underline;
 }
 .header .navbar-nav a {
   height: 36px;
@@ -289,8 +321,10 @@ h1.page-header > span {
 }
 
 @media screen and (min-width: 990px) {
+  .header .region-header {
+    text-align: center;
+  }
   .header nav {
-    display: inline-block;
     margin-top: 60px;
   }
   .header nav ul {

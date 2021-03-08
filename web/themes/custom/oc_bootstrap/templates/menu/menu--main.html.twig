@@ -55,7 +55,7 @@
 ]
 %}
 {% macro menu_links(items, attributes, menu_level, classes, dropdown_classes) %}
-  <a href="#" class="hamburger menu-main-hamburger"><i class="fa fa-bars"></i></a>
+  <a href="#" class="hamburger menu-main-hamburger"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
   {% if items %}
     <ul{{ attributes.addClass(menu_level == 0 ? classes : dropdown_classes) }}>
       {% for item in items %}

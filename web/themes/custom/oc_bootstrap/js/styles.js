@@ -31,6 +31,10 @@
           $footer.removeClass('gutter-wrapper-over');
         }
       }
+
+      $('a.hamburger', context).click(function() {
+        $(this).closest('nav').toggleClass('open');
+      });
     }
   };
 })(jQuery, Drupal);
