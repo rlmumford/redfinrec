@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'divisions:'
 name: Division
 type: division
-description: ''
+description: 'A Division that appears on the divisions page.'
 help: ''
 new_revision: true
 preview_mode: 1
