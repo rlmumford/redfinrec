@@ -1,0 +1,25 @@
+uuid: d506627d-1f1f-4edb-8a0a-cb6dbd05dc4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - oc_bootstrap
+id: mainnavigation
+theme: oc_bootstrap
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

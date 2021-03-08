@@ -30,6 +30,10 @@ p {
   font-weight: 400;
   font-size: 18px;
 }
+b, strong {
+  font-weight: 600;
+  color: #C77532;
+}
 
 p a {
   white-space: nowrap;
@@ -53,6 +57,13 @@ a.logo.navbar-btn img {
 .block-oc-socials {
   float: right;
   margin-top: 60px;
+  min-width: 150px; /* Match the width of the logo on the right to centre the menu */
+  text-align: right;
+}
+.path-frontpage .block-oc-socials {
+  min-width: 0;
+  width: 0;
+  direction: rtl; /* Make content overflow to the left of the box. */
 }
 .block-oc-socials a {
   color: #000000;
@@ -62,8 +73,23 @@ a.logo.navbar-btn img {
   color: #C77532;
 }
 
+.path-frontpage article.page {
+  display: none;
+}
+.path-frontpage .region-content a.logo.navbar-btn {
+  text-align: center;
+  display: block;
+  float: none !important;
+  margin-bottom: 40px;
+}
+.path-frontpage .region-content a.logo.navbar-btn img {
+  width: 500px;
+  height: auto;
+}
+
 .banner-wrapper {
   background: var(--banner-img, url(../images/about_large.jpg));
+  background-size: 100%;
   background-size: 100%;
   height: 400px;
   margin-bottom: 40px;
@@ -175,10 +201,34 @@ a.logo.navbar-btn img {
   margin-top: -50px;
 }
 
-
-.header nav {
-  clear: both;
+.header .region-header {
   text-align: center;
+}
+.header nav {
+  display: inline-block;
+  margin-top: 60px;
+}
+.header .navbar-nav a {
+  height: 36px;
+  border: 1px solid #C77532;
+  background: #C77532;
+  line-height: 36px;
+  padding: 0 15px;
+  border-radius: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.header .navbar-nav > li {
+  margin-left: 32px;
+}
+.header .navbar-nav > li.first {
+  margin-left: 0;
+}
+.header .navbar-nav a:hover {
+  color: #C77532;
+  background: #FFFFFF;
 }
 .header nav ul.menu--front-navigation {
   width: 490px;
@@ -291,13 +341,25 @@ h1.page-header > span {
   background: none;
 }
 
+.main-wrapper {
+  padding-bottom: 100px;
+}
 .gutter-wrapper {
+  border-top: 1px solid #C77532;
   background-color: #C77532;
   color: #FFFFFF;
   padding: 25px 0;
   line-height: 50px;
   font-size: 14px;
   font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: background-color 0.5s ease,
+                      color 0.5s ease;
+  transition: background-color 0.5s ease,
+              color 0.5s ease;
 }
 .gutter-wrapper > .container {
   margin: 0 128px;
@@ -306,6 +368,16 @@ h1.page-header > span {
 }
 .gutter-wrapper a {
   color: #FFFFFF;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.gutter-wrapper.gutter-wrapper-over {
+  background-color: #FFFFFF;
+  color: #C77532;
+}
+.gutter-wrapper.gutter-wrapper-over a {
+  color: #C77532;
 }
 .gutter nav a {
   text-transform: uppercase;
