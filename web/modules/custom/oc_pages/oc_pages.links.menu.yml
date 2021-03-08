@@ -2,7 +2,14 @@ oc_pages.divisions:
   title: 'Divisions'
   route_name: oc_pages.divisions
   menu_name: main
+  weight: -10
 oc_pages.testimonials:
   title: 'Testimonials'
   route_name: oc_pages.testimonials
   menu_name: main
+  weight: -5
+oc_pages.contact:
+  title: 'Contact'
+  route_name: contact.site_page
+  menu_name: main
+  weight: 50
