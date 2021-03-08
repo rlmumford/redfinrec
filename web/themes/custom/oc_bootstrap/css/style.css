@@ -35,6 +35,12 @@ b, strong {
   color: #C77532;
 }
 
+a {
+  color: #C77532;
+}
+a:hover, a:focus {
+  color: #C77532;
+}
 p a {
   white-space: nowrap;
 }
@@ -47,18 +53,25 @@ a.logo.navbar-btn {
   margin-bottom: 0;
 }
 a.logo.navbar-btn img {
-  height: 180px;
+  height: 70px;
+}
+
+.btn-primary {
+  border: 1px solid #C77532;
+  background-color: #C77532;
+}
+.btn-primary:hover, .btn-primary:focus {
+  color: #C77532;
+  background-color: #FFFFFF;
+  border-color: #C77532;
 }
 
 .header-wrapper {
-  height: 200px;
   padding: 10px 0;
 }
 .block-oc-socials {
   float: right;
-  margin-top: 60px;
-  min-width: 150px; /* Match the width of the logo on the right to centre the menu */
-  text-align: right;
+  margin-top: 19px;
 }
 .path-frontpage .block-oc-socials {
   min-width: 0;
@@ -90,8 +103,7 @@ a.logo.navbar-btn img {
 .banner-wrapper {
   background: var(--banner-img, url(../images/about_large.jpg));
   background-size: 100%;
-  background-size: 100%;
-  height: 400px;
+  height: 75px;
   margin-bottom: 40px;
   position: relative;
 }
@@ -137,8 +149,8 @@ a.logo.navbar-btn img {
 }
 
 .page-node-type-division .banner-wrapper,
-.path-divisions .banner-wrapper {
-  height: 140px;
+.path-divisions .banner-wrapper,
+.path-testimonials .banner-wrapper {
   background: url(../images/strip_hats.png) !important;
   background-position: 0 !important;
 }
@@ -173,10 +185,10 @@ a.logo.navbar-btn img {
   .page-node-type-job .banner-wrapper,
   .path-taxonomy .banner-wrapper,
   .banner-wrapper.image-truck {
-    background: url(../images/truck_1700.jpg);
+    background: url(../images/truck.png);
     background-size: 1700px;
     background-position-x: center;
-    background-position-y: -370px;
+    background-position-y: -530px;
   }
   .page-node-type-job .banner-wrapper {
     background-position-y: -470px;
@@ -198,21 +210,21 @@ a.logo.navbar-btn img {
 }
 
 .banner-wrapper h1.page-header {
-  height: 100px;
-  width: 460px;
+  height: 45px;
+  width: 200px;
   padding: 0;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -230px;
-  margin-top: -50px;
+  margin-left: -100px;
+  margin-top: -22px;
 }
 
 .header .region-header {
   text-align: center;
 }
 .header nav {
-  display: inline-block;
+  display: none;
   margin-top: 60px;
 }
 .header .navbar-nav a {
@@ -250,15 +262,51 @@ h1.page-header {
 h1.page-header > span {
   background: #C77532;
   border: 2px solid #FFFFFF;
-  border-radius: 50px;
+  border-radius: 23px;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 24px;
   text-transform: uppercase;
-  color: white;
-  line-height: 100px;
-  height: 100px;
-  width: 460px;
+  color: #FFFFFF;
+  line-height: 45px;
+  height: 45px;
+  width: 200px;
   display: inline-block;
+}
+
+@media screen and (min-width: 990px) {
+  .header nav {
+    display: inline-block;
+  }
+  a.logo.navbar-btn img {
+    height: 180px;
+  }
+  .block-oc-socials {
+    margin-top: 60px;
+    min-width: 150px; /* Match the width of the logo on the right to centre the menu */
+    text-align: right;
+  }
+  .banner-wrapper {
+    height: 400px;
+  }
+  .banner-wrapper h1.page-header {
+    height: 100px;
+    width: 460px;
+    margin-left: -230px;
+    margin-top: -50px;
+  }
+  h1.page-header > span {
+    border-radius: 50px;
+    font-size: 48px;
+    line-height: 100px;
+    height: 100px;
+    width: 460px;
+    display: inline-block;
+  }
+  .page-node-type-division .banner-wrapper,
+  .path-divisions .banner-wrapper,
+  .path-testimonials .banner-wrapper {
+    height: 140px;
+  }
 }
 
 .page-node-type-job div.author {
@@ -336,7 +384,7 @@ ul.menu--divisions.nav li.active a {
 }
 
 .footer-wrapper {
-  background-color: #b61c1c;
+  background-color: #C77532;
 }
 
 .footer {
@@ -369,8 +417,7 @@ ul.menu--divisions.nav li.active a {
   border-top: 1px solid #C77532;
   background-color: #C77532;
   color: #FFFFFF;
-  padding: 25px 0;
-  line-height: 50px;
+  padding: 10px 0;
   font-size: 14px;
   font-weight: 500;
   position: fixed;
@@ -383,7 +430,7 @@ ul.menu--divisions.nav li.active a {
               color 0.5s ease;
 }
 .gutter-wrapper > .container {
-  margin: 0 128px;
+  margin: 0 10px;
   padding: 0;
   width: auto;
 }
@@ -403,12 +450,39 @@ ul.menu--divisions.nav li.active a {
 .gutter nav a {
   text-transform: uppercase;
   padding: 0;
-  line-height: 50px;
   margin-left: 32px;
 }
 .gutter nav a:hover {
   background: none;
   text-decoration: underline;
+}
+.region-gutter {
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+  .gutter-wrapper {
+    padding: 25px 0;
+    line-height: 50px;
+  }
+  .gutter-wrapper > .container {
+    margin: 0 128px;
+  }
+  .gutter nav a {
+    line-height: 50px;
+  }
+  .region-gutter {
+    text-align: left;
+  }
+  .region-gutter section {
+    display: inline-block;
+    line-height: 50px;
+  }
+  .region-gutter nav {
+    display: inline-block;
+    float: right;
+    line-height: 50px;
+  }
 }
 
 .region-content h2 {
@@ -446,20 +520,18 @@ section.block-redfin-connect button.connect-button {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #B61C1C;
+  border: 1px solid #C77532;
   border-radius: 25px;
-  background-color: #B61C1C;
+  background-color: #C77532;
   padding: 10px 15px;
-  margin: 7px 25px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  margin: 7px 0 0 25px;
 }
 a.btn-apply:hover,
 section.block-redfin-connect button.connect-button:hover {
   cursor: pointer;
-  color: #b61c1c;
+  color: #C77532;
   background: #FFFFFF;
-  border-color: #b61c1c!important;
+  border-color: #C77532!important;
 }
 a.btn-apply:focus,
 section.block-redfin-connect button.connect-button:focus {
@@ -467,7 +539,7 @@ section.block-redfin-connect button.connect-button:focus {
 }
 section.block-redfin-connect button.connect-button.connect-button-open {
   border-radius: 25px 25px 0 0;
-  color: #B61C1C;
+  color: #C77532;
   background: #FFFFFF;
   border-bottom: none;
   overflow: visible;
@@ -491,7 +563,7 @@ section.block-redfin-connect .connect-info {
   height: auto;
   text-align: right;
   background: #FFFFFF;
-  border: 2px solid #B61C1C;
+  border: 2px solid #C77532;
   padding: 10px;
   border-radius: 5px 0px 5px 5px;
   color: #333333;
@@ -525,7 +597,7 @@ section.block-redfin-connect .connect-info span.social a {
 
 section.block-redfin-connect .connect-info a.contact-modal-link {
   display: inline-block;
-  border-right: 2px solid #B61C1C;
+  border-right: 2px solid #C77532;
   padding: 0px 5px;
 }
 section.block-redfin-connect .connect-info a.contact-modal-link.colleague-contact {
@@ -533,7 +605,7 @@ section.block-redfin-connect .connect-info a.contact-modal-link.colleague-contac
   padding-right: 0px;
 }
 section.block-redfin-connect .connect-info a.contact-modal-link:hover {
-  color: #B61C1C;
+  color: #C77532;
 }
 
 p.card,
@@ -631,22 +703,14 @@ div.modal-body div.field--name-field-description label {
   content: '';
 }
 
-.region-gutter section {
-  display: inline-block;
-  line-height: 50px;
-}
-.region-gutter nav {
-  display: inline-block;
-  float: right;
-  line-height: 50px;
-}
+
 
 .row.quotebox {
   margin: 10px 100px;
   font-size: 14px;
   background: #F1F1F1;
   padding: 10px 20px;
-  border-left: 5px solid #B61C1C;
+  border-left: 5px solid #C77532;
 }
 
 .row.quote {
@@ -659,4 +723,32 @@ div.modal-body div.field--name-field-description label {
 .row.byline {
   margin: 0;
   text-align: right;
+}
+
+.card {
+  border: 1px solid #DDDDDD;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.testimonial span.source {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.testimonial span.position {
+  font-weight: 600;
+  font-size: 18px;
+  color: #C77532;
+}
+
+.region-gutter .menu--account.nav li {
+  display: inline-block;
+}
+
+article.teaser h2 a {
+  color: #C77532;
+  font-weight: 700;
+  font-size: 24px;
 }

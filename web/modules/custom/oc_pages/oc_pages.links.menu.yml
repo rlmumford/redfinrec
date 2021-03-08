@@ -2,3 +2,7 @@ oc_pages.divisions:
   title: 'Divisions'
   route_name: oc_pages.divisions
   menu_name: main
+oc_pages.testimonials:
+  title: 'Testimonials'
+  route_name: oc_pages.testimonials
+  menu_name: main

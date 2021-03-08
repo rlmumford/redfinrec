@@ -12,4 +12,11 @@ oc_pages.divisions:
     _title: 'Divisions'
   requirements:
     _access: 'TRUE'
+oc_pages.testimonials:
+  path: '/testimonials'
+  defaults:
+    _controller: '\Drupal\oc_pages\Controller\PagesController::testimonials'
+    _title: 'Testimonials'
+  requirements:
+    _access: 'TRUE'
 

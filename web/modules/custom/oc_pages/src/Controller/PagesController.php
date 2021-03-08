@@ -52,4 +52,67 @@ class PagesController extends ControllerBase {
       ],
     ];
   }
+
+  /**
+   * Get the testimonials.
+   *
+   * @return array
+   */
+  protected function getTestimonials() {
+    $ts = [];
+
+    $ts[] = [
+      'message' => 'blah',
+      'source' => 'Luis Spinardi',
+      'position' => 'Site Director, Kraft Heinz',
+    ];
+    $ts[] = [
+      'message' => 'blah',
+      'source' => 'Lance Olmsted',
+      'position' => 'Vice President, Redzone Production Systems',
+    ];
+
+    return $ts;
+  }
+
+  /**
+   * The testimonials page.
+   *
+   * @return array
+   */
+  public function testimonials() {
+    $build = [];
+
+    foreach ($this->getTestimonials() as $key => $testimonial) {
+      $build['t_'.$key] = [
+        '#type' => 'container',
+        '#attributes' => [
+          'class' => ['card', 'testimonial'],
+        ],
+        'message' => [
+          '#type' => 'html_tag',
+          '#tag' => 'p',
+          '#value' => "\"".$testimonial['message']."\"",
+        ],
+        'source' => [
+          '#type' => 'html_tag',
+          '#tag' => 'span',
+          '#attributes' => [
+            'class' => 'source',
+          ],
+          '#value' => $testimonial['source'],
+        ],
+        'position' => [
+          '#type' => 'html_tag',
+          '#tag' => 'span',
+          '#attributes' => [
+            'class' => 'position',
+          ],
+          '#value' => $testimonial['position'],
+        ],
+      ];
+    }
+
+    return $build;
+  }
 }

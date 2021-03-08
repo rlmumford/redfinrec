@@ -43,7 +43,7 @@ function oc_bootstrap_preprocess_page(&$variables) {
  * Implements hook_preprocess_menu().
  */
 function oc_bootstrap_preprocess_menu(&$variables) {
-  if ($variables['menu_name'] !== 'divisions') {
+  if (!isset($variables['menu_name']) || $variables['menu_name'] !== 'divisions') {
     return;
   }
 
