@@ -11,10 +11,10 @@
  * Implements hook_preprocess_page() to add header image class.
  */
 function oc_bootstrap_preprocess_page(&$variables) {
-  $variables['header_image_class'] = '';
+  $variables['banner_image_class'] = '';
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     if ($node->redfin_header_image->value) {
-      $variables['header_image_class'] = 'image-'.$node->redfin_header_image->value;
+      $variables['banner_image_class'] = 'image-'.$node->redfin_header_image->value;
     }
   }
 }

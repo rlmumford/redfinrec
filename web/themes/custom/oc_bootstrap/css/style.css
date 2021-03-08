@@ -21,9 +21,6 @@ blockquote {
   }
 }
 
-a {
-  color: #E61C1C;
-}
 p a {
   white-space: nowrap;
 }
@@ -31,109 +28,130 @@ a.name.navbar-brand {
   display: none;
 }
 
+a.logo.navbar-btn {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a.logo.navbar-btn img {
-  width: 100px;
+  height: 180px;
 }
 
 .header-wrapper {
-  background: var(--header-img, url(../images/about_large.jpg));
+  height: 200px;
+  padding: 10px 0;
+}
+.block-oc-socials {
+  float: right;
+  margin-top: 60px;
+}
+.block-oc-socials a {
+  color: #000000;
+  font-size: 24px;
+}
+.block-oc-socials a:hover {
+  color: #C77532;
+}
+
+.banner-wrapper {
+  background: var(--banner-img, url(../images/about_large.jpg));
   background-size: 100%;
   height: 500px;
 }
-.header-wrapper.image-partner {
+.banner-wrapper.image-partner {
   background: url(../images/partner_large.jpg);
   background-position-y: -270px;
 }
-.header-wrapper.image-action {
+.banner-wrapper.image-action {
   background: url(../images/action_large.jpg);
   background-position-y: -480px;
 }
-.header-wrapper.image-work {
+.banner-wrapper.image-work {
   background: url(../images/work_large.jpg);
   background-position-y: -240px;
 }
-.header-wrapper.image-thanks {
+.banner-wrapper.image-thanks {
   background: url(../images/thanks_large.jpg);
 }
-.path-contact .header-wrapper,
-.header-wrapper.image-apples {
+.path-contact .banner-wrapper,
+.banner-wrapper.image-apples {
   background: url(../images/apples.jpg);
   background-size: 100%;
   background-position-y: -200px;
 }
-.header-wrapper.image-carrots {
+.banner-wrapper.image-carrots {
   background: url(../images/carrots.jpg);
   background-size: 100%;
 }
-.header-wrapper.image-corn {
+.banner-wrapper.image-corn {
   background: url(../images/corn.jpg);
   background-size: 100%;
   background-position-y: -200px;
 }
-.header-wrapper.image-raspberry {
+.banner-wrapper.image-raspberry {
   background: url(../images/raspberry.jpg);
   background-position-y: -480px;
   background-size: 100%;
 }
-.header-wrapper.image-tomato {
+.banner-wrapper.image-tomato {
   background: url(../images/tomato.jpg);
   background-size: 150%;
   background-position-y: -1300px;
 }
-.path-jobs .header-wrapper,
-.page-node-type-job .header-wrapper,
-.path-taxonomy .header-wrapper,
-.header-wrapper.image-truck {
-  background: url(../images/truck.jpg);
+.path-jobs .banner-wrapper,
+.page-node-type-job .banner-wrapper,
+.path-taxonomy .banner-wrapper,
+.banner-wrapper.image-truck {
+  background: url(../images/truck.png);
   background-size: 100%;
   background-position-y: -450px;
 }
-.page-node-type-job .header-wrapper {
+.page-node-type-job .banner-wrapper {
   height: initial;
   background-position: right 0px bottom -300px;
 }
-.page-node-type-job .header-wrapper .header {
+.page-node-type-job .banner-wrapper .banner {
   padding-bottom: 200px;
 }
 
-.path-frontpage .header-wrapper {
+.path-frontpage .banner-wrapper {
   background: url(../images/home_large.jpg);
   background-size: 100%;
   height: 100vh;
 }
 @media screen and (max-width: 1200px) {
-  .path-frontpage .header-wrapper {
+  .path-frontpage .banner-wrapper {
     background-size: unset;
   }
 }
 @media screen and (max-width: 1700px) {
-  .path-jobs .header-wrapper,
-  .page-node-type-job .header-wrapper,
-  .path-taxonomy .header-wrapper,
-  .header-wrapper.image-truck {
+  .path-jobs .banner-wrapper,
+  .page-node-type-job .banner-wrapper,
+  .path-taxonomy .banner-wrapper,
+  .banner-wrapper.image-truck {
     background: url(../images/truck_1700.jpg);
     background-size: 1700px;
     background-position-x: center;
     background-position-y: -370px;
   }
-  .page-node-type-job .header-wrapper {
+  .page-node-type-job .banner-wrapper {
     background-position-y: -470px;
   }
 }
 @media screen and (max-width: 1850px) {
-  .header-wrapper.image-tomato {
+  .banner-wrapper.image-tomato {
     background: url(../images/tomato_1850.jpg);
     background-size: 1850px;
     background-position-y: -670px;
   }
 }
 @media screen and (max-width: 1070px) {
-  .header-wrapper.image-apples {
+  .banner-wrapper.image-apples {
     background: url(../images/apples_1070.jpg);
     background-size: 1070px;
     background-position-y: -200px;
   }
 }
+
 
 .header nav {
   clear: both;
@@ -196,7 +214,7 @@ h1.page-header {
   line-height: 1em;
 }
 h1.page-header > span {
-  background: #B61C1C;
+  background: #C77532;
   padding: 10px 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -249,10 +267,30 @@ h1.page-header > span {
 }
 
 .gutter-wrapper {
-  background-color: #222222;
+  background-color: #C77532;
   color: #FFFFFF;
-  min-height: 40px;
-  line-height: 40px;
+  padding: 25px 0;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.gutter-wrapper > .container {
+  margin: 0 128px;
+  padding: 0;
+  width: auto;
+}
+.gutter-wrapper a {
+  color: #FFFFFF;
+}
+.gutter nav a {
+  text-transform: uppercase;
+  padding: 0;
+  line-height: 50px;
+  margin-left: 32px;
+}
+.gutter nav a:hover {
+  background: none;
+  text-decoration: underline;
 }
 
 .region-content h2 {
@@ -479,11 +517,13 @@ div.modal-body div.field--name-field-description label {
   content: '';
 }
 
+.region-gutter section {
+  display: inline-block;
+  line-height: 50px;
+}
 .region-gutter nav {
   display: inline-block;
   float: right;
-}
-.region-gutter > span {
   line-height: 50px;
 }
 

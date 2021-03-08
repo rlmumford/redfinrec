@@ -95,7 +95,7 @@
 {# Main #}
 {% block main %}
 <div role="header-wrapper" class="header-wrapper {{ header_image_class }}">
-  <div role="header" class="header-container {{ container }} header boo">
+  <div role="header" class="header-container {{ container }} header">
     <div class="row">
 
       {# Header #}
@@ -110,6 +110,24 @@
     </div>
   </div>
 </div>
+{% if page.banner or banner_image_class %}
+<div role="banner-wrapper" class="banner-wrapper {{ banner_image_class }}">
+  <div role="banner" class="banner-container {{ container }} banner">
+    <div class="row">
+
+      {# banner #}
+      {% if page.banner %}
+        {% block banner %}
+          <div class="col-sm-12" role="heading">
+            {{ page.banner }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+{% endif %}
 <div role="main-wrapper" class="main-wrapper">
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">

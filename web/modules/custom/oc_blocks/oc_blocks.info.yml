@@ -1,0 +1,5 @@
+name: Oliver Carol Blocks
+type: module
+description: Provides blocks for the oliver carol site.
+package: Oliver Carol
+core: 8.x

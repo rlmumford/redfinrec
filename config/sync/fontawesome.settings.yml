@@ -6,3 +6,11 @@ use_shim: true
 external_shim_location: 'https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js'
 _core:
   default_config_hash: acZMPh6rP4Ickz3nWwg2IyUCD3rjRgDfa79_xmPkkZk
+load_assets: true
+external_svg_integrity: ''
+allow_pseudo_elements: true
+use_solid_file: true
+use_regular_file: true
+use_light_file: true
+use_brands_file: true
+use_duotone_file: true

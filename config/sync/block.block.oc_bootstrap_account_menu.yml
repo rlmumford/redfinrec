@@ -13,7 +13,7 @@ _core:
 id: oc_bootstrap_account_menu
 theme: oc_bootstrap
 region: gutter
-weight: -5
+weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:

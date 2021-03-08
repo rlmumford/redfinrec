@@ -1,0 +1,20 @@
+uuid: c6435a5b-21aa-4558-b272-2634ea47d0fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - oc_blocks
+  theme:
+    - oc_bootstrap
+id: ocsocials
+theme: oc_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: oc_socials
+settings:
+  id: oc_socials
+  label: 'OC Socials'
+  provider: oc_blocks
+  label_display: '0'
+visibility: {  }

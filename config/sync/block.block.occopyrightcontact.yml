@@ -1,0 +1,20 @@
+uuid: 2665e2bb-0c7d-4c30-aabf-e88e6198edc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - oc_blocks
+  theme:
+    - oc_bootstrap
+id: occopyrightcontact
+theme: oc_bootstrap
+region: gutter
+weight: -5
+provider: null
+plugin: oc_copyright_contact
+settings:
+  id: oc_copyright_contact
+  label: 'OC Copyright & Contact'
+  provider: oc_blocks
+  label_display: '0'
+visibility: {  }
