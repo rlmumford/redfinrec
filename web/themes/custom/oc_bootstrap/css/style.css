@@ -223,9 +223,24 @@ a.logo.navbar-btn img {
 .header .region-header {
   text-align: center;
 }
-.header nav {
+
+a.hamburger {
+  font-size: 20px;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+  border: 1px solid #C77532;
+  border-radius: 17px;
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #C77532;
+}
+a.hamburger:hover {
+  background-color: #FFFFFF;
+  color: #C77532;
+}
+.header nav ul {
   display: none;
-  margin-top: 60px;
 }
 .header .navbar-nav a {
   height: 36px;
@@ -276,6 +291,13 @@ h1.page-header > span {
 @media screen and (min-width: 990px) {
   .header nav {
     display: inline-block;
+    margin-top: 60px;
+  }
+  .header nav ul {
+    display: inline-block;
+  }
+  a.hamburger {
+    display: none;
   }
   a.logo.navbar-btn img {
     height: 180px;
