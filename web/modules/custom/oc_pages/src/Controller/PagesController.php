@@ -41,13 +41,13 @@ class PagesController extends ControllerBase {
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => new TranslatableMarkup('We believe in providing a service that demonstrates our values of
-        excellence, genuineness, honesty and being solution providers.'),
+        <strong>excellence</strong>, <strong>genuineness</strong>, <strong>honesty</strong> and being <strong>solution providers</strong>.'),
       ],
       'p3' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => new TranslatableMarkup('If you are a business looking to add talent to your team and want a
-        knowledgeable, dedicated, and ethical recruitment partner contact us and let’s explore how we can serve you.'),
+        knowledgeable, dedicated, and ethical recruitment partner <a><strong>contact us</strong></a> and let’s explore how we can serve you.'),
       ],
       'p4' => [
         '#type' => 'html_tag',
