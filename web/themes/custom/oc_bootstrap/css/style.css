@@ -28,7 +28,7 @@ h2, h3 {
 }
 p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 b, strong {
   font-weight: 600;
@@ -170,7 +170,7 @@ a.logo.navbar-btn img {
 .page-node-type-division .banner-wrapper,
 .path-divisions .banner-wrapper,
 .path-testimonials .banner-wrapper {
-  background: url(../images/strip_hats.png) !important;
+  background: url(../images/strip_workers.png) !important;
   background-position: 0 !important;
 }
 .path-jobs .banner-wrapper,
@@ -298,7 +298,7 @@ a.hamburger:hover {
   line-height: 36px;
   padding: 0 15px;
   border-radius: 18px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -403,6 +403,7 @@ ul.menu--divisions.nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 990px) {
   ul.menu--divisions.nav {
@@ -497,7 +498,7 @@ ul.menu--divisions.nav li.active a {
   color: #FFFFFF;
   padding: 10px 0;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -540,7 +541,6 @@ ul.menu--divisions.nav li.active a {
 
 @media screen and (min-width: 990px) {
   .gutter-wrapper {
-    padding: 25px 0;
     line-height: 50px;
   }
   .gutter-wrapper > .container {
@@ -687,7 +687,7 @@ section.block-redfin-connect .connect-info a.contact-modal-link:hover {
 }
 
 p.card,
-article.teaser {
+article.teaser, .full {
   padding: 24px;
   border-radius: 2px;
   background: #FFFFFF;
