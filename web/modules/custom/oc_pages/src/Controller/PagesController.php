@@ -33,22 +33,29 @@ class PagesController extends ControllerBase {
       'p1' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
-        '#value' => new TranslatableMarkup('Every proven leader...'),
+        '#value' => new TranslatableMarkup('Every proven leader agrees that listening is critical to successfully
+        building and maintaining winning teams. Our role is to listen and learn what you need, challenge where
+        necessary, and then deliver. Simple as that.'),
       ],
       'p2' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
-        '#value' => new TranslatableMarkup('We believe in...'),
+        '#value' => new TranslatableMarkup('We believe in providing a service that demonstrates our values of
+        excellence, genuineness, honesty and being solution providers.'),
       ],
       'p3' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
-        '#value' => new TranslatableMarkup('If you are...'),
+        '#value' => new TranslatableMarkup('If you are a business looking to add talent to your team and want a
+        knowledgeable, dedicated, and ethical recruitment partner contact us and let’s explore how we can serve you.'),
       ],
       'p4' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
-        '#value' => new TranslatableMarkup('We serve all...'),
+        '#value' => new TranslatableMarkup('We serve all industries within the manufacturing sector and have
+        experience of successfully deploying talent acquisition campaigns across multiple functions including
+        Operation & Production, Technical & Quality, Engineering, Product Development & Innovation, Sales, Marketing,
+        HR, Supply Chain, Logistics & Purchasing, Main & Lower Board Appointments.'),
       ],
     ];
   }
@@ -62,14 +69,28 @@ class PagesController extends ControllerBase {
     $ts = [];
 
     $ts[] = [
-      'message' => 'blah',
+      'message' => 'James provided an excellent service to our ambitious plan. With agility and flexibility he proved
+      to be a committed member of our extended team in the search for high level profiles to our organization.',
       'source' => 'Luis Spinardi',
       'position' => 'Site Director, Kraft Heinz',
     ];
     $ts[] = [
-      'message' => 'blah',
+      'message' => 'James and I have worked together for a number of years. His insights and understanding of the FMCG
+      sector are unparalleled. Couple this understanding with his ability to quickly dissect and absorb a company
+      culture and it becomes readily apparent why James and Oliver Carol Recruitment have become a trusted partner
+      within the FMCG & CPG space. I would recommend any business leader looking to scale their Operations,
+      Maintenance or QA management talent to contact Oliver Carol Recruitment as an obvious first step.',
       'source' => 'Lance Olmsted',
       'position' => 'Vice President, Redzone Production Systems',
+    ];
+    $ts[] = [
+      'message' => 'Oliver Carol Recruitment have recently found me my perfect job. After working at the same place
+      for the last seven years, making the decision to start looking for something new was daunting to say the least.
+      The team made the whole process so easy and stress free despite my constantly changing diary. They are really
+      approachable, up front and is easy to work with and really know what they are talking about. I am so excited to
+      start my new role and will be forever thankful for all the help they have given me over the last few months.',
+      'source' => 'Leanne Parkin',
+      'position' => 'Head of Operations, Ramsden International',
     ];
 
     return $ts;
