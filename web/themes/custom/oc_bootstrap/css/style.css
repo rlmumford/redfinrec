@@ -67,6 +67,20 @@ a.logo.navbar-btn img {
   border-color: #C77532;
 }
 
+.btn-info {
+  color: #000000;
+  background-color: #DBDBDB;
+  border-color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.btn-info:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border-color: #FFFFFF;
+}
+
 .header-wrapper {
   padding: 10px 0;
 }
@@ -815,4 +829,12 @@ article.teaser h2 a {
   color: #C77532;
   font-weight: 700;
   font-size: 24px;
+}
+
+.views-exposed-form {
+  background-color: #C77532;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 0px;
+  color: #FFFFFF;
 }
