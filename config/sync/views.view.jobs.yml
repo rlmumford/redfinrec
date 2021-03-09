@@ -6,8 +6,11 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.job
     - system.menu.main
+    - taxonomy.vocabulary.tags
   module:
     - node
+    - search
+    - taxonomy
     - user
 id: jobs
 label: Jobs
@@ -146,6 +149,94 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+          group: 1
+        keys:
+          id: keys
+          table: node_search_index
+          field: keys
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: optional
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: keys_op
+            label: Keywords
+            description: ''
+            use_operator: false
+            operator: keys_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: keys
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_keywords
+        field_job_function_target_id:
+          id: field_job_function_target_id
+          table: node__field_job_function
+          field: field_job_function_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_job_function_target_id_op
+            label: Function
+            description: ''
+            use_operator: false
+            operator: field_job_function_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_job_function_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: tags
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -182,12 +273,18 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -208,7 +305,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
