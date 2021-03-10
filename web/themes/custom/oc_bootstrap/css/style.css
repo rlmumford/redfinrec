@@ -143,9 +143,8 @@ a.logo.navbar-btn img {
 }
 .path-contact .banner-wrapper,
 .banner-wrapper.image-apples {
-  background: url(../images/apples.jpg);
+  background: url(../images/workers.png);
   background-size: 100%;
-  background-position-y: -200px;
 }
 .banner-wrapper.image-carrots {
   background: url(../images/carrots.jpg);
@@ -293,6 +292,7 @@ a.hamburger:hover {
 }
 .header .navbar-nav a {
   height: 36px;
+  width: 130px;
   border: 1px solid #C77532;
   background: #C77532;
   line-height: 36px;
@@ -497,7 +497,7 @@ ul.menu--divisions.nav li.active a {
   background-color: #C77532;
   color: #FFFFFF;
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   position: fixed;
   bottom: 0;
@@ -542,6 +542,7 @@ ul.menu--divisions.nav li.active a {
 @media screen and (min-width: 990px) {
   .gutter-wrapper {
     line-height: 50px;
+    font-size: 14px;
   }
   .gutter-wrapper > .container {
     margin: 0 128px;
@@ -741,7 +742,7 @@ a.feed-icon {
 
 @media screen and (max-width: 770px) {
   .region-content p {
-    margin: 10px 20px;
+    margin: 0px;
   }
   .page-node-type-job .header-wrapper .header {
     padding-bottom: 0;
