@@ -165,18 +165,33 @@ a.logo.navbar-btn img {
 }
 
 .page-node-type-division .banner-wrapper,
-.path-about .banner-wrapper,
-.path-testimonials .banner-wrapper {
-  background: none;
-  background-position: 0 !important;
+.path-about .banner-wrapper, .banner-wrapper {
+  background: url(../images/truck.png);
+  background-size: 100%;
+  background-position-y: 700px;
 }
+
+.page-node-type-division .banner-wrapper,
+.banner-wrapper, .path-testimonials .banner-wrapper {
+  background: url(../images/bottles.png);
+  background-size: 100%;
+  background-position-y: center;
+}
+
 .path-jobs .banner-wrapper,
 .page-node-type-job .banner-wrapper,
 .path-taxonomy .banner-wrapper,
 .banner-wrapper.image-truck {
   background: url(../images/workers.png);
   background-size: 100%;
+  background-position-x: center;
 }
+
+.path-contact .banner-wrapper {
+  height: 140px;
+  background: none;
+}
+
 .page-node-type-job .banner-wrapper {
   height: initial;
   background-position: right 0px bottom -300px;
@@ -354,9 +369,7 @@ h1.page-header > span {
     min-width: 150px; /* Match the width of the logo on the right to centre the menu */
     text-align: right;
   }
-  .banner-wrapper {
-    height: 400px;
-  }
+
   .banner-wrapper h1.page-header {
     height: 100px;
     width: 460px;
@@ -373,8 +386,8 @@ h1.page-header > span {
   }
   .page-node-type-division .banner-wrapper,
   .path-about .banner-wrapper,
-  .path-testimonials, .path-contact, .banner-wrapper {
-    height: 140px;
+  .path-testimonials, .banner-wrapper {
+    height: 400px;
   }
 }
 
@@ -853,4 +866,51 @@ article.teaser h2 a {
   color: #FFFFFF;
   background-color: #C77532;
   border-color: #FFFFFF;
+}
+
+.path-contact .form-submit {
+  color: #C77532;
+  background-color: #FFFFFF;
+  border: 1px solid #C77532;
+}
+
+.path-contact .form-submit:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border: 1px solid #FFFFFF;
+}
+
+.form-control:focus {
+  border-color: #C77532;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(199 117 50 / 60%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(199 117 50 / 60%);
+}
+
+.path-contact .form-inline .form-control {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 40%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+.form-actions {
+  margin-right: 10px;
+  margin-top: 20px;
 }

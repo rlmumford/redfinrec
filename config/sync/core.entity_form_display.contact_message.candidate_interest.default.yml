@@ -49,7 +49,7 @@ content:
   field_phone:
     weight: 3
     settings:
-      placeholder: 'Phone No.'
+      placeholder: 'Phone No. (Inc. International Calling Code)'
     third_party_settings: {  }
     type: telephone_default
     region: content

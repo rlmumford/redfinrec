@@ -1,6 +1,6 @@
-oc_pages.divisions:
+oc_pages.about:
   title: 'About Us'
-  route_name: oc_pages.divisions
+  route_name: oc_pages.about
   menu_name: main
 oc_pages.testimonials:
   title: 'Testimonials'

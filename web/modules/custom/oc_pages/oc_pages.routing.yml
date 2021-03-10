@@ -5,7 +5,7 @@ oc_pages.home:
     _title: 'Home'
   requirements:
     _access: 'TRUE'
-oc_pages.divisions:
+oc_pages.about:
   path: '/about'
   defaults:
     _controller: '\Drupal\oc_pages\Controller\PagesController::about'

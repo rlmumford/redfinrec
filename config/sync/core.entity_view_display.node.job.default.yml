@@ -24,7 +24,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 8
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -37,7 +37,7 @@ content:
     type: string
     region: content
   field_benefits:
-    weight: 7
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
@@ -68,28 +68,12 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_max_salary:
-    weight: 6
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_min_salary:
-    weight: 5
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_max_salary: true
+  field_min_salary: true
   redfin_header_image: true
