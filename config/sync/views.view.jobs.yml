@@ -44,11 +44,11 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
+          submit_button: 'Search Jobs'
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -265,7 +265,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<strong>All applications are reviewed by a team member. Unfortunately we cannot reply to every applicant. If you have not heard from one of our team within two weeks of applying then you have been unsuccessful in your application for that position. </strong>'
+            value: 'All applications are reviewed by a team member. Unfortunately we cannot reply to every applicant. If you have not heard from one of our team within two weeks of applying then you have been unsuccessful in your application for that position.'
             format: basic_html
           plugin_id: text
       footer: {  }

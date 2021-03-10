@@ -838,3 +838,22 @@ article.teaser h2 a {
   margin: 40px 0px;
   color: #FFFFFF;
 }
+
+.view-header {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-submit {
+  border-radius: 50px;
+  border: 1px solid #FFFFFF;
+  background-color: #DBDBDB;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-submit:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border-color: #FFFFFF;
+}
