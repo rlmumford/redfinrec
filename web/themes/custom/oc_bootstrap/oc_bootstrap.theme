@@ -18,7 +18,7 @@ function oc_bootstrap_preprocess_page_title(&$variables) {
   /** @var \Drupal\node\Entity\Node $node */
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     if ($node->bundle() == 'division') {
-      $variables['title'] = new TranslatableMarkup('Divisions');
+      $variables['title'] = new TranslatableMarkup('About Us');
     }
   }
 }
@@ -33,7 +33,7 @@ function oc_bootstrap_preprocess_page(&$variables) {
     if ($node->hasField('redfin_header_image') && $node->redfin_header_image->value) {
       $variables['banner_image_class'] = 'image-'.$node->redfin_header_image->value;
     }
-    else if ($node->bundle() == 'division') {
+    else if ($node->bundle() == 'about') {
       $variables['banner_image_class'] = 'image-truck';
     }
   }
@@ -43,7 +43,7 @@ function oc_bootstrap_preprocess_page(&$variables) {
  * Implements hook_preprocess_menu().
  */
 function oc_bootstrap_preprocess_menu(&$variables) {
-  if (!isset($variables['menu_name']) || $variables['menu_name'] !== 'divisions') {
+  if (!isset($variables['menu_name']) || $variables['menu_name'] !== 'about') {
     return;
   }
 

@@ -120,7 +120,6 @@ a.logo.navbar-btn img {
 }
 
 .banner-wrapper {
-  background: var(--banner-img, url(../images/about_large.jpg));
   background-size: 100%;
   height: 75px;
   margin-bottom: 40px;
@@ -141,9 +140,8 @@ a.logo.navbar-btn img {
 .banner-wrapper.image-thanks {
   background: url(../images/thanks_large.jpg);
 }
-.path-contact .banner-wrapper,
+.banner-wrapper,
 .banner-wrapper.image-apples {
-  background: url(../images/workers.png);
   background-size: 100%;
 }
 .banner-wrapper.image-carrots {
@@ -167,18 +165,17 @@ a.logo.navbar-btn img {
 }
 
 .page-node-type-division .banner-wrapper,
-.path-divisions .banner-wrapper,
+.path-about .banner-wrapper,
 .path-testimonials .banner-wrapper {
-  background: url(../images/strip_workers.png) !important;
+  background: none;
   background-position: 0 !important;
 }
 .path-jobs .banner-wrapper,
 .page-node-type-job .banner-wrapper,
 .path-taxonomy .banner-wrapper,
 .banner-wrapper.image-truck {
-  background: url(../images/truck.png);
+  background: url(../images/workers.png);
   background-size: 100%;
-  background-position-y: -530px;
 }
 .page-node-type-job .banner-wrapper {
   height: initial;
@@ -203,10 +200,9 @@ a.logo.navbar-btn img {
   .page-node-type-job .banner-wrapper,
   .path-taxonomy .banner-wrapper,
   .banner-wrapper.image-truck {
-    background: url(../images/truck.png);
+    background: url(../images/workers.png);
     background-size: 1700px;
     background-position-x: center;
-    background-position-y: -530px;
   }
   .page-node-type-job .banner-wrapper {
     background-position-y: -470px;
@@ -324,13 +320,13 @@ h1.page-header {
   line-height: 1em;
 }
 h1.page-header > span {
-  background: #C77532;
-  border: 2px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #C77532;
   border-radius: 23px;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #C77532;
   line-height: 45px;
   height: 45px;
   width: 200px;
@@ -376,8 +372,8 @@ h1.page-header > span {
     display: inline-block;
   }
   .page-node-type-division .banner-wrapper,
-  .path-divisions .banner-wrapper,
-  .path-testimonials .banner-wrapper {
+  .path-about .banner-wrapper,
+  .path-testimonials, .path-contact, .banner-wrapper {
     height: 140px;
   }
 }

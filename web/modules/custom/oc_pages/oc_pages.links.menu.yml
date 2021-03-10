@@ -1,5 +1,5 @@
 oc_pages.divisions:
-  title: 'Divisions'
+  title: 'About Us'
   route_name: oc_pages.divisions
   menu_name: main
 oc_pages.testimonials:

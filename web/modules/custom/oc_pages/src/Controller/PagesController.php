@@ -28,7 +28,7 @@ class PagesController extends ControllerBase {
    *
    * @return array
    */
-  public function divisions() {
+  public function about() {
     return [
       'p1' => [
         '#type' => 'html_tag',
@@ -47,7 +47,7 @@ class PagesController extends ControllerBase {
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => new TranslatableMarkup('If you are a business looking to add talent to your team and want a
-        knowledgeable, dedicated, and ethical recruitment partner <a><strong>contact us</strong></a> and let’s explore how we can serve you.'),
+        knowledgeable, dedicated, and ethical recruitment partner <a href="http://www.olivercarol.com/contact"><strong>contact us</strong></a> and let’s explore how we can serve you.'),
       ],
       'p4' => [
         '#type' => 'html_tag',

@@ -6,10 +6,10 @@ oc_pages.home:
   requirements:
     _access: 'TRUE'
 oc_pages.divisions:
-  path: '/divisions'
+  path: '/about'
   defaults:
-    _controller: '\Drupal\oc_pages\Controller\PagesController::divisions'
-    _title: 'Divisions'
+    _controller: '\Drupal\oc_pages\Controller\PagesController::about'
+    _title: 'About Us'
   requirements:
     _access: 'TRUE'
 oc_pages.testimonials:
