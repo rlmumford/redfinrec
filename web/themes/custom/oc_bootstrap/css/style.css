@@ -168,7 +168,7 @@ a.logo.navbar-btn img {
 .path-about .banner-wrapper, .banner-wrapper {
   background: url(../images/truck.png);
   background-size: 100%;
-  background-position-y: 700px;
+  background-position-y: 130px;
 }
 
 .page-node-type-division .banner-wrapper,
@@ -184,7 +184,7 @@ a.logo.navbar-btn img {
 .banner-wrapper.image-truck {
   background: url(../images/workers.png);
   background-size: 100%;
-  background-position-x: center;
+  background-position-y: -300px;
 }
 
 .path-contact .banner-wrapper {
@@ -216,8 +216,8 @@ a.logo.navbar-btn img {
   .path-taxonomy .banner-wrapper,
   .banner-wrapper.image-truck {
     background: url(../images/workers.png);
-    background-size: 1700px;
-    background-position-x: center;
+    background-size: 100%;
+    background-position-y: center;
   }
   .page-node-type-job .banner-wrapper {
     background-position-y: -470px;
@@ -388,6 +388,9 @@ h1.page-header > span {
   .path-about .banner-wrapper,
   .path-testimonials, .banner-wrapper {
     height: 400px;
+    background: url(../images/truck.png);
+    background-size: 100%;
+    background-position-y: 700px;
   }
 }
 
@@ -431,6 +434,8 @@ ul.menu--divisions.nav li {
   background-image: url(../images/card_construction.png);
   min-height: 140px;
   display: table;
+  background-size: 100%;
+  background-position-y: center;
 }
 ul.menu--divisions.nav li.division-construction {
   background-image: url(../images/card_construction.png);
