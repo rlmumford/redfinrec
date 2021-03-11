@@ -1,0 +1,62 @@
+uuid: ccabf1c6-c894-4b76-a640-abcb882356bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.general_contact_form
+    - field.field.contact_message.general_contact_form.field_attachment
+    - field.field.contact_message.general_contact_form.field_checkbox
+    - field.field.contact_message.general_contact_form.field_email_address
+    - field.field.contact_message.general_contact_form.field_first_name
+    - field.field.contact_message.general_contact_form.field_last_name
+    - field.field.contact_message.general_contact_form.field_phone
+  module:
+    - file
+    - telephone
+id: contact_message.general_contact_form.default
+targetEntityType: contact_message
+bundle: general_contact_form
+mode: default
+content:
+  field_attachment:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_email_address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 3
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+hidden:
+  field_checkbox: true
+  message: true
