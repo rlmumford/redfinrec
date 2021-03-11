@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/divisions\r\n/divisions/*"
+    pages: "/about\r\n/about/*"
     negate: false
     context_mapping: {  }

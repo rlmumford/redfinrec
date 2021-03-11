@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.job.field_location
     - field.field.node.job.field_max_salary
     - field.field.node.job.field_min_salary
+    - field.field.node.job.redfin_header_image
     - node.type.job
   module:
     - text
@@ -24,7 +25,7 @@ content:
   body:
     label: visually_hidden
     type: text_trimmed
-    weight: 7
+    weight: 5
     settings:
       trim_length: 450
     third_party_settings: {  }
@@ -39,7 +40,7 @@ content:
     third_party_settings: {  }
   field_benefits:
     type: string
-    weight: 6
+    weight: 4
     region: content
     label: inline
     settings:
@@ -69,24 +70,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_max_salary:
-    type: number_integer
-    weight: 5
-    region: content
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-  field_min_salary:
-    type: number_integer
-    weight: 4
-    region: content
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
 hidden:
+  field_max_salary: true
+  field_min_salary: true
   links: true
   redfin_header_image: true

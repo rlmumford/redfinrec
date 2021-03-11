@@ -28,7 +28,7 @@ h2, h3 {
 }
 p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 b, strong {
   font-weight: 600;
@@ -65,6 +65,20 @@ a.logo.navbar-btn img {
   color: #C77532;
   background-color: #FFFFFF;
   border-color: #C77532;
+}
+
+.btn-info {
+  color: #000000;
+  background-color: #DBDBDB;
+  border-color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.btn-info:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border-color: #FFFFFF;
 }
 
 .header-wrapper {
@@ -106,7 +120,6 @@ a.logo.navbar-btn img {
 }
 
 .banner-wrapper {
-  background: var(--banner-img, url(../images/about_large.jpg));
   background-size: 100%;
   height: 75px;
   margin-bottom: 40px;
@@ -127,11 +140,9 @@ a.logo.navbar-btn img {
 .banner-wrapper.image-thanks {
   background: url(../images/thanks_large.jpg);
 }
-.path-contact .banner-wrapper,
+.banner-wrapper,
 .banner-wrapper.image-apples {
-  background: url(../images/apples.jpg);
   background-size: 100%;
-  background-position-y: -200px;
 }
 .banner-wrapper.image-carrots {
   background: url(../images/carrots.jpg);
@@ -154,19 +165,33 @@ a.logo.navbar-btn img {
 }
 
 .page-node-type-division .banner-wrapper,
-.path-divisions .banner-wrapper,
-.path-testimonials .banner-wrapper {
-  background: url(../images/strip_hats.png) !important;
-  background-position: 0 !important;
+.path-about .banner-wrapper, .banner-wrapper {
+  background: url(../images/truck.png);
+  background-size: 100%;
+  background-position-y: 130px;
 }
+
+.page-node-type-division .banner-wrapper,
+.banner-wrapper, .path-testimonials .banner-wrapper {
+  background: url(../images/bottles.png);
+  background-size: 100%;
+  background-position-y: center;
+}
+
 .path-jobs .banner-wrapper,
 .page-node-type-job .banner-wrapper,
 .path-taxonomy .banner-wrapper,
 .banner-wrapper.image-truck {
-  background: url(../images/truck.png);
+  background: url(../images/workers.png);
   background-size: 100%;
-  background-position-y: -530px;
+  background-position-y: -300px;
 }
+
+.path-contact .banner-wrapper {
+  height: 140px;
+  background: none;
+}
+
 .page-node-type-job .banner-wrapper {
   height: initial;
   background-position: right 0px bottom -300px;
@@ -190,10 +215,9 @@ a.logo.navbar-btn img {
   .page-node-type-job .banner-wrapper,
   .path-taxonomy .banner-wrapper,
   .banner-wrapper.image-truck {
-    background: url(../images/truck.png);
-    background-size: 1700px;
-    background-position-x: center;
-    background-position-y: -530px;
+    background: url(../images/workers.png);
+    background-size: 100%;
+    background-position-y: center;
   }
   .page-node-type-job .banner-wrapper {
     background-position-y: -470px;
@@ -279,12 +303,13 @@ a.hamburger:hover {
 }
 .header .navbar-nav a {
   height: 36px;
+  width: 130px;
   border: 1px solid #C77532;
   background: #C77532;
   line-height: 36px;
   padding: 0 15px;
   border-radius: 18px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -311,13 +336,13 @@ h1.page-header {
   line-height: 1em;
 }
 h1.page-header > span {
-  background: #C77532;
-  border: 2px solid #FFFFFF;
+  background: #FFFFFF;
+  border: 2px solid #C77532;
   border-radius: 23px;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #C77532;
   line-height: 45px;
   height: 45px;
   width: 200px;
@@ -345,9 +370,7 @@ h1.page-header > span {
     min-width: 150px; /* Match the width of the logo on the right to centre the menu */
     text-align: right;
   }
-  .banner-wrapper {
-    height: 400px;
-  }
+
   .banner-wrapper h1.page-header {
     height: 100px;
     width: 460px;
@@ -363,9 +386,11 @@ h1.page-header > span {
     display: inline-block;
   }
   .page-node-type-division .banner-wrapper,
-  .path-divisions .banner-wrapper,
-  .path-testimonials .banner-wrapper {
-    height: 140px;
+  .path-about .banner-wrapper,
+  .path-testimonials, .banner-wrapper {
+    height: 400px;
+    background-size: 100%;
+    background-position-y: 700px;
   }
 }
 
@@ -390,6 +415,7 @@ ul.menu--divisions.nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 990px) {
   ul.menu--divisions.nav {
@@ -408,6 +434,8 @@ ul.menu--divisions.nav li {
   background-image: url(../images/card_construction.png);
   min-height: 140px;
   display: table;
+  background-size: 100%;
+  background-position-y: center;
 }
 ul.menu--divisions.nav li.division-construction {
   background-image: url(../images/card_construction.png);
@@ -483,8 +511,8 @@ ul.menu--divisions.nav li.active a {
   background-color: #C77532;
   color: #FFFFFF;
   padding: 10px 0;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 400;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -527,8 +555,8 @@ ul.menu--divisions.nav li.active a {
 
 @media screen and (min-width: 990px) {
   .gutter-wrapper {
-    padding: 25px 0;
     line-height: 50px;
+    font-size: 14px;
   }
   .gutter-wrapper > .container {
     margin: 0 128px;
@@ -674,7 +702,7 @@ section.block-redfin-connect .connect-info a.contact-modal-link:hover {
 }
 
 p.card,
-article.teaser {
+article.teaser, .full {
   padding: 24px;
   border-radius: 2px;
   background: #FFFFFF;
@@ -728,7 +756,7 @@ a.feed-icon {
 
 @media screen and (max-width: 770px) {
   .region-content p {
-    margin: 10px 20px;
+    margin: 0px;
   }
   .page-node-type-job .header-wrapper .header {
     padding-bottom: 0;
@@ -816,4 +844,78 @@ article.teaser h2 a {
   color: #C77532;
   font-weight: 700;
   font-size: 24px;
+}
+
+.views-exposed-form {
+  background-color: #C77532;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 0px;
+  color: #FFFFFF;
+}
+
+.view-header {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-submit {
+  border-radius: 50px;
+  border: 1px solid #FFFFFF;
+  background-color: #DBDBDB;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.form-submit:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border-color: #FFFFFF;
+}
+
+.path-contact .form-submit {
+  color: #C77532;
+  background-color: #FFFFFF;
+  border: 1px solid #C77532;
+}
+
+.path-contact .form-submit:hover {
+  color: #FFFFFF;
+  background-color: #C77532;
+  border: 1px solid #FFFFFF;
+}
+
+.form-control:focus {
+  border-color: #C77532;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(199 117 50 / 60%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(199 117 50 / 60%);
+}
+
+.path-contact .form-inline .form-control {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 40%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+.form-actions {
+  margin-right: 10px;
+  margin-top: 20px;
 }

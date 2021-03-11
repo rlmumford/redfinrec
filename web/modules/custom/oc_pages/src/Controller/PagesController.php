@@ -4,6 +4,7 @@ namespace Drupal\oc_pages\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Url;
 
 /**
  * Controller for static Oliver Carol Pages
@@ -28,7 +29,7 @@ class PagesController extends ControllerBase {
    *
    * @return array
    */
-  public function divisions() {
+  public function about() {
     return [
       'p1' => [
         '#type' => 'html_tag',
@@ -41,13 +42,17 @@ class PagesController extends ControllerBase {
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => new TranslatableMarkup('We believe in providing a service that demonstrates our values of
-        excellence, genuineness, honesty and being solution providers.'),
+        <strong>excellence</strong>, <strong>genuineness</strong>, <strong>honesty</strong> and being <strong>solution providers</strong>.'),
       ],
       'p3' => [
         '#type' => 'html_tag',
         '#tag' => 'p',
         '#value' => new TranslatableMarkup('If you are a business looking to add talent to your team and want a
-        knowledgeable, dedicated, and ethical recruitment partner contact us and let’s explore how we can serve you.'),
+        knowledgeable, dedicated, and ethical recruitment partner <a href=":url"><strong>contact us</strong></a> and let’s explore how we can serve you.',
+    [
+      ':url' => Url::fromRoute('contact.site_page')->toString(),
+    ]
+  ),
       ],
       'p4' => [
         '#type' => 'html_tag',

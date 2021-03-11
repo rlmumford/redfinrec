@@ -28,6 +28,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   field_advert_ref_no:
@@ -39,7 +40,7 @@ content:
     type: string_textfield
     region: content
   field_benefits:
-    weight: 9
+    weight: 7
     settings:
       size: 60
       placeholder: ''
@@ -74,29 +75,15 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_max_salary:
-    weight: 8
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_min_salary:
-    weight: 7
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
   path:
     type: path
-    weight: 10
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   redfin_header_image:
     type: options_select
-    weight: 11
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -117,6 +104,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_max_salary: true
+  field_min_salary: true
   promote: true
   sticky: true
   uid: true
