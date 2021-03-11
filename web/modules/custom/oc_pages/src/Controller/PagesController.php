@@ -97,6 +97,14 @@ class PagesController extends ControllerBase {
       'source' => 'Leanne Parkin',
       'position' => 'Head of Operations, Ramsden International',
     ];
+    $ts[] = [
+      'message' => 'James is an inspirational leader, we have worked together on a few projects to date. His integrity
+      and personal approach drives effective and energising connections and opportunities. James has a strong network
+      of both candidates and clients across the globe, this network brings insight and a refreshing way of working.
+      I would highly recommend.',
+      'source' => 'Craig Finney',
+      'position' => 'Global QSR Key Account Director, Farm Frites',
+    ];
 
     return $ts;
   }
