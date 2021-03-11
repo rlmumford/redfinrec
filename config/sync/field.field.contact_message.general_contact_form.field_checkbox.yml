@@ -1,0 +1,23 @@
+uuid: 3060763b-716c-4eaa-9389-e189a3fe600d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.general_contact_form
+    - field.storage.contact_message.field_checkbox
+id: contact_message.general_contact_form.field_checkbox
+field_name: field_checkbox
+entity_type: contact_message
+bundle: general_contact_form
+label: Checkbox
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

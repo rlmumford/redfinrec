@@ -1,0 +1,94 @@
+uuid: fbed108e-9e8d-4a7c-9098-e8c70dbeb3e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.general_contact_form
+    - field.field.contact_message.general_contact_form.field_attachment
+    - field.field.contact_message.general_contact_form.field_checkbox
+    - field.field.contact_message.general_contact_form.field_email_address
+    - field.field.contact_message.general_contact_form.field_first_name
+    - field.field.contact_message.general_contact_form.field_last_name
+    - field.field.contact_message.general_contact_form.field_phone
+  module:
+    - file
+    - telephone
+id: contact_message.general_contact_form.default
+targetEntityType: contact_message
+bundle: general_contact_form
+mode: default
+content:
+  copy:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attachment:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_checkbox:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_email_address:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  message:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  preview:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  mail: true
+  name: true

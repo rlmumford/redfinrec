@@ -1,0 +1,12 @@
+uuid: 078ce38f-f566-4a88-93db-dc593893beaf
+langcode: en
+status: true
+dependencies: {  }
+id: general_contact_form
+label: 'General Contact Form'
+recipients:
+  - info@olivercarol.com
+reply: ''
+weight: 0
+message: ''
+redirect: /home
