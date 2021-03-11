@@ -175,6 +175,27 @@ a.logo.navbar-btn img {
 .banner-wrapper, .path-testimonials .banner-wrapper {
   background: url(../images/bottles.png);
   background-size: 100%;
+  background-position-y: -550px;
+}
+
+@media screen and (max-width: 1700px) {
+  .path-testimonials .banner-wrapper {
+    background-size: 100%;
+    background-position-y: -450px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .path-testimonials .banner-wrapper {
+    background-size: 100%;
+    background-position-y: center;
+  }
+}
+
+.page-node-type-division .banner-wrapper,
+.banner-wrapper, .path-contact .banner-wrapper {
+  background: url(../images/machine.png);
+  background-size: 100%;
   background-position-y: center;
 }
 
@@ -185,11 +206,6 @@ a.logo.navbar-btn img {
   background: url(../images/workers.png);
   background-size: 100%;
   background-position-y: -300px;
-}
-
-.path-contact .banner-wrapper {
-  height: 140px;
-  background: none;
 }
 
 .page-node-type-job .banner-wrapper {
@@ -387,7 +403,7 @@ h1.page-header > span {
   }
   .page-node-type-division .banner-wrapper,
   .path-about .banner-wrapper,
-  .path-testimonials, .banner-wrapper {
+  .path-testimonials, .path-contact, .banner-wrapper {
     height: 400px;
     background-size: 100%;
     background-position-y: 700px;
@@ -457,6 +473,9 @@ ul.menu--divisions.nav li.division-pharma {
 }
 ul.menu--divisions.nav li.division-automotive {
   background-image: url(../images/card_automotive.png);
+}
+ul.menu--divisions.nav li.division-printing {
+  background-image: url(../images/card_printing.png);
 }
 ul.menu--divisions.nav li a {
   font-size: 20px;
