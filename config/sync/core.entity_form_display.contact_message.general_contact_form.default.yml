@@ -30,13 +30,6 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  field_checkbox:
-    weight: 9
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_email_address:
     weight: 3
     settings:
@@ -90,5 +83,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_checkbox: true
   mail: true
   name: true

@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 id: candidate_interest
-label: Contact
+label: Application
 recipients:
   - info@olivercarol.com
 reply: ''
 weight: 0
 message: ''
-redirect: /thanks
+redirect: ''

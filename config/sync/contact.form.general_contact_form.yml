@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: general_contact_form
-label: 'General Contact Form'
+label: Contact
 recipients:
   - info@olivercarol.com
 reply: ''

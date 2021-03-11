@@ -19,22 +19,12 @@ bundle: general_contact_form
 mode: default
 content:
   field_attachment:
-    weight: 5
+    weight: 4
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
-    region: content
-  field_checkbox:
-    weight: 6
-    label: hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   field_email_address:
     weight: 2
@@ -68,4 +58,5 @@ content:
     type: telephone_link
     region: content
 hidden:
+  field_checkbox: true
   message: true
