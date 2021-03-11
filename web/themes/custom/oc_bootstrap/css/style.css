@@ -336,7 +336,8 @@ a.hamburger:hover {
 .header .navbar-nav > li.first {
   margin-left: 0;
 }
-.header .navbar-nav a:hover {
+.header .navbar-nav a:hover,
+.header .navbar-nav li.active-trail a {
   color: #C77532;
   background: #FFFFFF;
 }
