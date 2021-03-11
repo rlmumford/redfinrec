@@ -388,7 +388,6 @@ h1.page-header > span {
   .path-about .banner-wrapper,
   .path-testimonials, .banner-wrapper {
     height: 400px;
-    background: url(../images/truck.png);
     background-size: 100%;
     background-position-y: 700px;
   }
