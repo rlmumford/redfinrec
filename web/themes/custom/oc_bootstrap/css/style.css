@@ -119,6 +119,15 @@ a.logo.navbar-btn img {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1700px) {
+  .path-frontpage .region-content a.logo.navbar-btn img {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
 .banner-wrapper {
   background-size: 100%;
   height: 75px;
@@ -168,7 +177,7 @@ a.logo.navbar-btn img {
 .path-about .banner-wrapper, .banner-wrapper {
   background: url(../images/truck.png);
   background-size: 100%;
-  background-position-y: 130px;
+  background-position-y: 700px;
 }
 
 .page-node-type-division .banner-wrapper,
@@ -188,6 +197,34 @@ a.logo.navbar-btn img {
 @media screen and (max-width: 1290px) {
   .path-testimonials .banner-wrapper {
     background-size: 100%;
+    background-position-y: -280px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .path-testimonials .banner-wrapper {
+    background-size: 100%;
+    background-position-y: center;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .path-about .banner-wrapper {
+    background-size: 100%;
+    background-position-y: 600px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .path-about .banner-wrapper {
+    background-size: 100%;
+    background-position-y: 580px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .path-about .banner-wrapper {
+    background-size: 100%;
     background-position-y: center;
   }
 }
@@ -200,7 +237,6 @@ a.logo.navbar-btn img {
 }
 
 .path-jobs .banner-wrapper,
-.page-node-type-job .banner-wrapper,
 .path-taxonomy .banner-wrapper,
 .banner-wrapper.image-truck {
   background: url(../images/workers.png);
@@ -210,7 +246,7 @@ a.logo.navbar-btn img {
 
 .page-node-type-job .banner-wrapper {
   height: initial;
-  background-position: right 0px bottom -300px;
+  background: none;
 }
 .page-node-type-job .banner-wrapper .banner {
   padding-bottom: 200px;
@@ -228,15 +264,11 @@ a.logo.navbar-btn img {
 }
 @media screen and (max-width: 1700px) {
   .path-jobs .banner-wrapper,
-  .page-node-type-job .banner-wrapper,
   .path-taxonomy .banner-wrapper,
   .banner-wrapper.image-truck {
     background: url(../images/workers.png);
     background-size: 100%;
     background-position-y: center;
-  }
-  .page-node-type-job .banner-wrapper {
-    background-position-y: -470px;
   }
 }
 @media screen and (max-width: 1850px) {
@@ -402,7 +434,6 @@ h1.page-header > span {
     display: inline-block;
   }
   .page-node-type-division .banner-wrapper,
-  .path-about .banner-wrapper,
   .path-testimonials, .path-contact, .banner-wrapper {
     height: 400px;
     background-size: 100%;
@@ -939,6 +970,23 @@ article.teaser h2 a {
   margin-top: 20px;
 }
 
-.division {
-  display: none;
+.page-node-type-division .full {
+  padding: 0px;
+  box-shadow: none;
+}
+
+.page-node-type-job h1.page-header > span {
+  border: none;
+}
+
+@media screen and (min-width: 990px) {
+  .page-node-type-job h1.page-header {
+    width: 1000px;
+  }
+  .page-node-type-job .banner-wrapper {
+    left: -250px;
+  }
+  .page-node-type-job h1.page-header > span {
+    width: 1000px;
+  }
 }
