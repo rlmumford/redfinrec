@@ -7,16 +7,16 @@ dependencies:
 id: divisions
 label: Divisions
 type: 'canonical_entities:node'
-pattern: 'divisions/[node:title]'
+pattern: 'about/[node:title]'
 selection_criteria:
-  bbc6ef2f-74bc-4dcb-a053-8bd37eaf0881:
+  1c3fce13-fcd7-4230-b4df-6ad9aa9ac7cf:
     id: node_type
     bundles:
       division: division
     negate: false
     context_mapping:
       node: node
-    uuid: bbc6ef2f-74bc-4dcb-a053-8bd37eaf0881
+    uuid: 1c3fce13-fcd7-4230-b4df-6ad9aa9ac7cf
 selection_logic: and
 weight: -5
 relationships: {  }
