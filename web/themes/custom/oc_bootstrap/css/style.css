@@ -938,3 +938,7 @@ article.teaser h2 a {
   margin-right: 10px;
   margin-top: 20px;
 }
+
+.division {
+  display: none;
+}
