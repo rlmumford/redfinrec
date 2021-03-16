@@ -990,3 +990,48 @@ article.teaser h2 a {
     width: 1000px;
   }
 }
+
+.division-building-materials-amp-construction,
+.division-consumer-electronics,
+.division-fashion,
+.division-fmcg-amp-cpg,
+.division-industrial-equipment-amp-packaging,
+.division-paper-publishing-amp-printing,
+.division-pharmaceutical,
+.division-transportation-amp-automotive {
+  min-height: 140px;
+  background-size: 100%;
+  background-position-y: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto 0;
+}
+
+.division-building-materials-amp-construction {
+  background-image: url(../images/card_construction.png);
+}
+.division-consumer-electronics {
+  background-image: url(../images/card_electronics.png);
+}
+.division-fmcg-amp-cpg {
+  background-image: url(../images/card_fmcg.png);
+}
+.division-fashion {
+  background-image: url(../images/card_fashion.png);
+}
+.division-industrial-equipment-amp-packaging {
+  background-image: url(../images/card_packaging.png);
+}
+.division-pharmaceutical {
+  background-image: url(../images/card_pharma.png);
+}
+.division-transportation-amp-automotive {
+  background-image: url(../images/card_automotive.png);
+}
+.division-paper-publishing-amp-printing {
+  background-image: url(../images/card_printing.png);
+}

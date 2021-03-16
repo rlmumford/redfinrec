@@ -11,7 +11,7 @@ dependencies:
 id: divisions
 theme: oc_bootstrap
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: 'system_menu_block:divisions'
 settings:
