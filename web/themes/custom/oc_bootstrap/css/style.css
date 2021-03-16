@@ -977,38 +977,18 @@ article.teaser h2 a {
 
 .page-node-type-job h1.page-header > span {
   border: 2px solid;
-  width: 700px;
+  width: 100%;
 }
 
-.page-node-type-job .banner-wrapper h1.page-header {
-  left-margin: auto;
+.page-node-type-job h1.page-header {
+  width: 100%;
+  margin-left: auto;
+  left: 0;
 }
 
 @media screen and (min-width: 990px) {
-  .page-node-type-job h1.page-header {
-    width: 940px;
-  }
-  .page-node-type-job .banner-wrapper {
-    left: -240px;
-  }
   .page-node-type-job h1.page-header > span {
-    width: 940px;
-    font-size: 30px;
-    border: 2px solid;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-node-type-job h1.page-header {
-    width: 1200px;
-  }
-  .page-node-type-job .banner-wrapper {
-    left: -360px;
-  }
-  .page-node-type-job h1.page-header > span {
-    width: 1100px;
     font-size: 36px;
-    border: 2px solid;
   }
 }
 
