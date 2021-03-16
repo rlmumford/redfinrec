@@ -250,6 +250,7 @@ a.logo.navbar-btn img {
 }
 .page-node-type-job .banner-wrapper .banner {
   padding-bottom: 150px;
+  position: relative;
 }
 
 .path-frontpage .banner-wrapper {
