@@ -386,13 +386,12 @@ h1.page-header {
 h1.page-header > span {
   background: #FFFFFF;
   border: 2px solid #C77532;
-  border-radius: 23px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
   color: #C77532;
   line-height: 45px;
-  height: 45px;
   width: 200px;
   display: inline-block;
 }
