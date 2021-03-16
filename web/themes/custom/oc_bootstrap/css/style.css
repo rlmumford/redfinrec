@@ -991,14 +991,7 @@ article.teaser h2 a {
   }
 }
 
-.division-building-materials-amp-construction,
-.division-consumer-electronics,
-.division-fashion,
-.division-fmcg-amp-cpg,
-.division-industrial-equipment-amp-packaging,
-.division-paper-publishing-amp-printing,
-.division-pharmaceutical,
-.division-transportation-amp-automotive {
+.division-row {
   min-height: 140px;
   background-size: 100%;
   background-position-y: center;

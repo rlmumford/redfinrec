@@ -52,16 +52,14 @@ display:
           items_per_page: 8
           offset: 0
       style:
-        type: grid
+        type: html_list
         options:
           grouping: {  }
-          columns: 4
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: false
-          col_class_custom: 'division-{{ title | clean_class }}'
-          row_class_default: false
-          row_class_custom: divisions-row
+          row_class: 'division-row division-{{ title | clean_class }}'
+          default_row_class: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
         options:
