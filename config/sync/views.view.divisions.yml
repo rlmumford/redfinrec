@@ -58,8 +58,8 @@ display:
           row_class: 'division-row division-{{ title | clean_class }}'
           default_row_class: false
           type: ul
-          wrapper_class: item-list
-          class: ''
+          wrapper_class: ''
+          class: 'menu menu--divisions nav'
       row:
         type: fields
         options:
