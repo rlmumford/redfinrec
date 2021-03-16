@@ -1007,6 +1007,9 @@ article.teaser h2 a {
 .division-building-materials-amp-construction {
   background-image: url(../images/card_construction.png);
 }
+.division-building-materials-amp-construction:hover {
+  background-image: url(../images/card_construction_grey.png);
+}
 .division-consumer-electronics {
   background-image: url(../images/card_electronics.png);
 }
