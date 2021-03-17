@@ -249,7 +249,8 @@ a.logo.navbar-btn img {
   background: none;
 }
 .page-node-type-job .banner-wrapper .banner {
-  padding-bottom: 200px;
+  padding-bottom: 150px;
+  position: relative;
 }
 
 .path-frontpage .banner-wrapper {
@@ -386,13 +387,12 @@ h1.page-header {
 h1.page-header > span {
   background: #FFFFFF;
   border: 2px solid #C77532;
-  border-radius: 23px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
   color: #C77532;
   line-height: 45px;
-  height: 45px;
   width: 200px;
   display: inline-block;
 }
@@ -1003,18 +1003,19 @@ article.teaser h2 a {
 }
 
 .page-node-type-job h1.page-header > span {
-  border: none;
+  border: 2px solid;
+  width: 100%;
+}
+
+.page-node-type-job h1.page-header {
+  width: 100%;
+  margin-left: auto;
+  left: 0;
 }
 
 @media screen and (min-width: 990px) {
-  .page-node-type-job h1.page-header {
-    width: 1000px;
-  }
-  .page-node-type-job .banner-wrapper {
-    left: -250px;
-  }
   .page-node-type-job h1.page-header > span {
-    width: 1000px;
+    font-size: 36px;
   }
 }
 
