@@ -1008,46 +1008,54 @@ article.teaser h2 a {
 }
 .division-building-materials-amp-construction:hover {
   background-image: url(../images/card_construction_grey.png);
+  color: #C77532;
 }
 .division-consumer-electronics {
   background-image: url(../images/card_electronics.png);
 }
 .division-consumer-electronics:hover {
   background-image: url(../images/card_electronics_grey.png);
+  color: #C77532;
 }
 .division-fmcg-amp-cpg {
   background-image: url(../images/card_fmcg.png);
 }
 .division-fmcg-amp-cpg:hover {
   background-image: url(../images/card_fmcg_grey.png);
+  color: #C77532;
 }
 .division-row.division-fashion {
   background-image: url(../images/card_fashion.png);
 }
 .division-row.division-fashion:hover {
   background-image: url(../images/card_fashion_grey.png);
+  color: #C77532;
 }
 .division-industrial-equipment-amp-packaging {
   background-image: url(../images/card_packaging.png);
 }
 .division-industrial-equipment-amp-packaging:hover {
   background-image: url(../images/card_packaging_grey.png);
+  color: #C77532;
 }
 .division-pharmaceutical {
   background-image: url(../images/card_pharma.png);
 }
 .division-pharmaceutical:hover {
   background-image: url(../images/card_pharma_grey.png);
+  color: #C77532;
 }
 .division-transportation-amp-automotive {
   background-image: url(../images/card_automotive.png);
 }
 .division-transportation-amp-automotive:hover {
   background-image: url(../images/card_automotive_grey.png);
+  color: #C77532;
 }
 .division-paper-publishing-amp-printing {
   background-image: url(../images/card_printing.png);
 }
 .division-paper-publishing-amp-printing:hover {
   background-image: url(../images/card_printing_grey.png);
+  color: #C77532;
 }
