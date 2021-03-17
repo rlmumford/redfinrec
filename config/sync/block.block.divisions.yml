@@ -1,6 +1,6 @@
 uuid: 2b621ecc-7e26-497d-85b9-e2da4c114da2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.divisions

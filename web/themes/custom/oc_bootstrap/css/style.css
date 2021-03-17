@@ -249,6 +249,7 @@ a.logo.navbar-btn img {
 }
 .page-node-type-job .banner-wrapper .banner {
   padding-bottom: 150px;
+  position: relative;
 }
 
 .path-frontpage .banner-wrapper {
@@ -415,13 +416,12 @@ h1.page-header {
 h1.page-header > span {
   background: #FFFFFF;
   border: 2px solid #C77532;
-  border-radius: 23px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
   color: #C77532;
   line-height: 45px;
-  height: 45px;
   width: 200px;
   display: inline-block;
 }
@@ -508,7 +508,6 @@ ul.menu.menu--divisions.nav:before {
   display: none;
 }
 ul.menu--divisions.nav li {
-  background-image: url(../images/card_construction.png);
   min-height: 140px;
   display: table;
   background-size: 100%;
@@ -517,26 +516,50 @@ ul.menu--divisions.nav li {
 ul.menu--divisions.nav li.division-construction {
   background-image: url(../images/card_construction.png);
 }
+ul.menu--divisions.nav li.division-construction:hover {
+  background-image: url(../images/card_construction_grey.png);
+}
 ul.menu--divisions.nav li.division-electronics {
   background-image: url(../images/card_electronics.png);
+}
+ul.menu--divisions.nav li.division-electronics:hover {
+  background-image: url(../images/card_electronics_grey.png);
 }
 ul.menu--divisions.nav li.division-fmcg {
   background-image: url(../images/card_fmcg.png);
 }
+ul.menu--divisions.nav li.division-fmcg:hover {
+  background-image: url(../images/card_fmcg_grey.png);
+}
 ul.menu--divisions.nav li.division-fashion {
   background-image: url(../images/card_fashion.png);
+}
+ul.menu--divisions.nav li.division-fashion:hover {
+  background-image: url(../images/card_fashion_grey.png);
 }
 ul.menu--divisions.nav li.division-packaging {
   background-image: url(../images/card_packaging.png);
 }
+ul.menu--divisions.nav li.division-packaging:hover {
+  background-image: url(../images/card_packaging_grey.png);
+}
 ul.menu--divisions.nav li.division-pharma {
   background-image: url(../images/card_pharma.png);
+}
+ul.menu--divisions.nav li.division-pharma:hover {
+  background-image: url(../images/card_pharma_grey.png);
 }
 ul.menu--divisions.nav li.division-automotive {
   background-image: url(../images/card_automotive.png);
 }
+ul.menu--divisions.nav li.division-automotive:hover {
+  background-image: url(../images/card_automotive_grey.png);
+}
 ul.menu--divisions.nav li.division-printing {
   background-image: url(../images/card_printing.png);
+}
+ul.menu--divisions.nav li.division-printing:hover {
+  background-image: url(../images/card_printing_grey.png);
 }
 ul.menu--divisions.nav li a {
   font-size: 20px;
@@ -553,7 +576,11 @@ ul.menu--divisions.nav li a:hover {
 }
 ul.menu--divisions.nav li.active a {
   color: #C77532;
-  background-color: #EEEEEE;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background: none !important;
 }
 
 .footer-wrapper {
@@ -1007,75 +1034,88 @@ article.teaser h2 a {
 
 .page-node-type-job h1.page-header > span {
   border: 2px solid;
-  width: 700px;
+  width: 100%;
 }
 
-.page-node-type-job .banner-wrapper h1.page-header {
-  left-margin: auto;
+.page-node-type-job h1.page-header {
+  width: 100%;
+  margin-left: auto;
+  left: 0;
 }
 
 @media screen and (min-width: 990px) {
-  .page-node-type-job h1.page-header {
-    width: 940px;
-  }
-  .page-node-type-job .banner-wrapper {
-    left: -240px;
-  }
   .page-node-type-job h1.page-header > span {
-    width: 940px;
-    font-size: 30px;
-    border: 2px solid;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-node-type-job h1.page-header {
-    width: 1200px;
-  }
-  .page-node-type-job .banner-wrapper {
-    left: -360px;
-  }
-  .page-node-type-job h1.page-header > span {
-    width: 1100px;
     font-size: 36px;
-    border: 2px solid;
   }
 }
 
 .division-row {
-  min-height: 140px;
-  background-size: 100%;
-  background-position-y: center;
   font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
+}
+
+.block-views-blockdivisions-block-1 .views-field-title {
+  display: table-cell;
   vertical-align: middle;
-  margin: auto 0;
+  padding: 10px 15px;
 }
 
 .division-building-materials-amp-construction {
   background-image: url(../images/card_construction.png);
 }
+.division-building-materials-amp-construction:hover {
+  background-image: url(../images/card_construction_grey.png);
+  color: #C77532;
+}
 .division-consumer-electronics {
   background-image: url(../images/card_electronics.png);
+}
+.division-consumer-electronics:hover {
+  background-image: url(../images/card_electronics_grey.png);
+  color: #C77532;
 }
 .division-fmcg-amp-cpg {
   background-image: url(../images/card_fmcg.png);
 }
-.division-fashion {
+.division-fmcg-amp-cpg:hover {
+  background-image: url(../images/card_fmcg_grey.png);
+  color: #C77532;
+}
+.division-row.division-fashion {
   background-image: url(../images/card_fashion.png);
+}
+.division-row.division-fashion:hover {
+  background-image: url(../images/card_fashion_grey.png);
+  color: #C77532;
 }
 .division-industrial-equipment-amp-packaging {
   background-image: url(../images/card_packaging.png);
 }
+.division-industrial-equipment-amp-packaging:hover {
+  background-image: url(../images/card_packaging_grey.png);
+  color: #C77532;
+}
 .division-pharmaceutical {
   background-image: url(../images/card_pharma.png);
+}
+.division-pharmaceutical:hover {
+  background-image: url(../images/card_pharma_grey.png);
+  color: #C77532;
 }
 .division-transportation-amp-automotive {
   background-image: url(../images/card_automotive.png);
 }
+.division-transportation-amp-automotive:hover {
+  background-image: url(../images/card_automotive_grey.png);
+  color: #C77532;
+}
 .division-paper-publishing-amp-printing {
   background-image: url(../images/card_printing.png);
+}
+.division-paper-publishing-amp-printing:hover {
+  background-image: url(../images/card_printing_grey.png);
+  color: #C77532;
 }
