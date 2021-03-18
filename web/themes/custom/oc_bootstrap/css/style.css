@@ -189,7 +189,7 @@ a.logo.navbar-btn img {
 @media screen and (max-width: 1700px) {
   .path-testimonials .banner-wrapper {
     background-size: 100%;
-    background-position-y: -500px;
+    background-position-y: -460px;
   }
 }
 
@@ -210,7 +210,7 @@ a.logo.navbar-btn img {
 @media screen and (max-width: 1700px) {
   .path-about .banner-wrapper {
     background-size: 100%;
-    background-position-y: 500px;
+    background-position-y: 530px;
   }
 }
 
@@ -246,6 +246,7 @@ a.logo.navbar-btn img {
 .page-node-type-job .banner-wrapper {
   height: initial;
   background: none;
+  border-bottom: none;
 }
 .page-node-type-job .banner-wrapper .banner {
   padding-bottom: 150px;
@@ -268,7 +269,7 @@ a.logo.navbar-btn img {
   .banner-wrapper.image-truck {
     background: url(../images/workers.png);
     background-size: 100%;
-    background-position-y: 800px;
+    background-position-y: 740px;
   }
 }
 
