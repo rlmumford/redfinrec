@@ -246,6 +246,7 @@ a.logo.navbar-btn img {
 .page-node-type-job .banner-wrapper {
   height: initial;
   background: none;
+  border-bottom: none;
 }
 .page-node-type-job .banner-wrapper .banner {
   padding-bottom: 150px;
