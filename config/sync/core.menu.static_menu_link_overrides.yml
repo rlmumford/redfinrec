@@ -30,7 +30,7 @@ definitions:
     enabled: true
     expanded: false
   oc_pages__contact:
-    enabled: false
+    enabled: true
     menu_name: main
     parent: ''
     expanded: false
