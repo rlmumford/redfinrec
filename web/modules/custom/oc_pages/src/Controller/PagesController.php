@@ -89,6 +89,16 @@ class PagesController extends ControllerBase {
       'position' => 'Vice President, Redzone Production Systems',
     ];
     $ts[] = [
+      'message' => 'I have known James for over a decade and he has demonstrated an excellent ability to source and
+      secure key talent for a variety of roles ranging from mid-management to senior strategic appointments. His record
+      of success provides confidence to me and hiring managers that he is well placed to serve and support strategic
+      hiring strategies through his resourcing ability and high quality network within the supply chain and
+      manufacturing space. James has partnered with me on strategic & confidential hires on several occasions, and
+      he has always delivered. A go-to talent partner for businesses looking to hire value adding people.',
+      'source' => 'James McGahan',
+      'position' => 'Senior Manager, Talent Acquisition - IMETA at Brambles',
+    ];
+    $ts[] = [
       'message' => 'Oliver Carol Recruitment have recently found me my perfect job. After working at the same place
       for the last seven years, making the decision to start looking for something new was daunting to say the least.
       The team made the whole process so easy and stress free despite my constantly changing diary. They are really
