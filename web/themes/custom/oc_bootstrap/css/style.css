@@ -520,16 +520,18 @@ ul.menu--divisions.nav li.division-construction {
 ul.menu--divisions.nav li.division-construction:hover {
   background-image: url(../images/card_construction_grey.png);
 }
-ul.menu--divisions.nav li.division-electronics {
+ul.menu--divisions.nav li.division-electronics,
+ul.menu--divisions.nav li.division-oem {
   background-image: url(../images/card_electronics.png);
 }
-ul.menu--divisions.nav li.division-electronics:hover {
+ul.menu--divisions.nav li.division-electronics:hover,
+ul.menu--divisions.nav li.division-oem:hover {
   background-image: url(../images/card_electronics_grey.png);
 }
-ul.menu--divisions.nav li.division-fmcg {
+ul.menu--divisions.nav li.division-cpg {
   background-image: url(../images/card_fmcg.png);
 }
-ul.menu--divisions.nav li.division-fmcg:hover {
+ul.menu--divisions.nav li.division-cpg:hover {
   background-image: url(../images/card_fmcg_grey.png);
 }
 ul.menu--divisions.nav li.division-fashion {
@@ -550,10 +552,12 @@ ul.menu--divisions.nav li.division-pharma {
 ul.menu--divisions.nav li.division-pharma:hover {
   background-image: url(../images/card_pharma_grey.png);
 }
-ul.menu--divisions.nav li.division-automotive {
+ul.menu--divisions.nav li.division-automotive,
+ul.menu--divisions.nav li.division-industrial-automation {
   background-image: url(../images/card_automotive.png);
 }
-ul.menu--divisions.nav li.division-automotive:hover {
+ul.menu--divisions.nav li.division-automotive:hover
+ul.menu--divisions.nav li.division-industrial-automation:hover {
   background-image: url(../images/card_automotive_grey.png);
 }
 ul.menu--divisions.nav li.division-printing {
