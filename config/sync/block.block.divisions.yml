@@ -17,14 +17,14 @@ plugin: 'system_menu_block:divisions'
 settings:
   id: 'system_menu_block:divisions'
   label: 'Divisions Menu'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/about\r\n/about/*"
     negate: false
     context_mapping: {  }
+    pages: "/about\r\n/about/*"

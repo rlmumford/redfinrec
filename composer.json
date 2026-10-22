@@ -1,6 +1,6 @@
 {
     "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "description": "Oliver Carol Recruitment Drupal site.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -13,46 +13,23 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor-plugin/youtube",
-                "version": "2.1.10",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/youtube/releases/youtube_2.1.10.zip",
-                    "type": "zip"
-                },
-                "require": {
-                    "composer/installers": "~1.0"
-                }
-            }
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:rlmumford/composer-patches.git"
         }
     ],
     "require": {
-        "ckeditor-plugin/youtube": "^2.1",
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "dev-dev-relative-patches",
-        "drupal/bootstrap": "^3.11",
-        "drupal/ckeditor_widgets": "1.x-dev",
-        "drupal/ckeditor_youtube": "^1.1",
-        "drupal/console": "^1.0.2",
-        "drupal/core-composer-scaffold": "^8.9",
-        "drupal/core-recommended": "^8.9",
-        "drupal/fontawesome": "^2.18",
-        "drupal/pathauto": "^1.8",
-        "drush/drush": "^9.0.0",
-        "vlucas/phpdotenv": "^2.4",
+        "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/bootstrap": "^3.40",
+        "drupal/core-composer-scaffold": "^10.6",
+        "drupal/core-recommended": "^10.6",
+        "drupal/fontawesome": "^2.26",
+        "drupal/pathauto": "^1.13",
+        "drush/drush": "^12.5",
+        "vlucas/phpdotenv": "^5.5",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/devel": "^1.2",
-        "drupal/core-dev": "^8.9"
+        "drupal/core-dev": "^10.6",
+        "drupal/devel": "^5.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -60,13 +37,23 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
+        }
     },
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -84,19 +71,25 @@
     },
     "extra": {
         "enable-patching": true,
-        "patches": {
-            "drupal/ckeditor_widgets": {
-                "Remove unsupported widgets": "https://www.drupal.org/files/issues/2018-08-30/2932639-7.patch",
-                "Fix supported widget buttons": "https://www.drupal.org/files/issues/2018-08-23/2994701-2.patch"
-            }
-        },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/{$name}": [
+                "type:drupal-drush"
+            ]
         },
         "drupal-scaffold": {
             "locations": {

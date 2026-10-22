@@ -1,13 +1,12 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
   big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
-  ckeditor: 0
-  ckeditor_widgets: 0
-  ckeditor_youtube: 0
-  color: 0
+  ckeditor5: 0
   comment: 0
   config: 0
   contact: 0
@@ -25,8 +24,12 @@ module:
   help: 0
   history: 0
   image: 0
+  jquery_ui: 0
+  jquery_ui_draggable: 0
+  jquery_ui_resizable: 0
   link: 0
   menu_ui: 0
+  mysql: 0
   node: 0
   oc_blocks: 0
   oc_pages: 0
@@ -34,8 +37,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  quickedit: 0
-  rdf: 0
+  phpass: 0
   redfin_connect: 0
   redfin_tweaks: 0
   search: 0
@@ -54,13 +56,8 @@ module:
   views: 10
   minimal: 1000
 theme:
-  stable: 0
-  classy: 0
-  bartik: 0
   bootstrap: 0
   redfin_bootstrap: 0
   oc_bootstrap: 0
   claro: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

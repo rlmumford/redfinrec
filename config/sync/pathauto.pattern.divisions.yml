@@ -2,21 +2,22 @@ uuid: 4e731882-7a50-4f15-9d8f-7e6b1492acba
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.division
   module:
     - node
 id: divisions
 label: Divisions
 type: 'canonical_entities:node'
-pattern: 'about/[node:title]'
+pattern: '/about/[node:title]'
 selection_criteria:
   1c3fce13-fcd7-4230-b4df-6ad9aa9ac7cf:
-    id: node_type
-    bundles:
-      division: division
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: node
-    uuid: 1c3fce13-fcd7-4230-b4df-6ad9aa9ac7cf
+    bundles:
+      division: division
 selection_logic: and
 weight: -5
 relationships: {  }

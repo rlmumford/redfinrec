@@ -15,8 +15,8 @@ plugin: redfin_connect_block
 settings:
   id: redfin_connect_block
   label: 'Redfin Connect Block'
-  provider: redfin_connect
   label_display: '0'
+  provider: redfin_connect
   telephone: ''
   email: info@redfinrecruitment.com
   address_line1: 'The Enterprise Centre'

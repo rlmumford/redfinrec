@@ -2,4 +2,4 @@ name: Redfin Connect
 type: module
 description: Provides the Connect block at the top of the page.
 package: Redfin
-core: 8.x
+core_version_requirement: ^9.5 || ^10

@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
 uuid: 5948be13-f3df-4a33-9f72-b08acce56d04
 name: 'Oliver Carol Recruitment'
 mail: info@olivercarol.com
@@ -8,7 +11,5 @@ page:
   front: /home
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: null

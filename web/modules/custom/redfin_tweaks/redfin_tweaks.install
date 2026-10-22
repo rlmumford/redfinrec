@@ -17,7 +17,7 @@ function redfin_tweaks_update_dependencies() {
  * Add header job image and more values.
  */
 function redfin_tweaks_update_8001() {
-  $source = new FileStorage(drupal_get_path('module', 'redfin_tweaks').'/config/install');
+  $source = new FileStorage(\Drupal::service('extension.list.module')->getPath('redfin_tweaks').'/config/install');
   /** @var \Drupal\Core\Config\StorageInterface $config_storage */
   $config_storage = \Drupal::service('config.storage');
 

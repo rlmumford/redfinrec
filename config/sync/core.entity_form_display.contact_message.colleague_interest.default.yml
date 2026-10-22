@@ -13,12 +13,12 @@ bundle: colleague_interest
 mode: default
 content:
   field_cv:
+    type: file_generic
     weight: 2
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   mail:
     weight: 1
     region: content
